@@ -95,7 +95,7 @@ At an early time in the standard cosmology model, the universe began as a fireba
 \begin{itemize}
   \item Primordial quark-gluon plasma: At early times when the temperature was between $130\ \mathrm{GeV}>T>150\ \mathrm{MeV}$, we have leptons, gauge mesons, and deconfined quarks which propagated freely and all hadrons are dissolved into their constituents. At that time, strongly interacting nearly massless particles $u,d,s,G$ controlled the fate of the universe.
   \item Hadronic plasma: Around the hadronization temperature $T_h\approx150\ \mathrm{MeV}$, a phase transformation occured forcing the stongly interacting particles such as quarks and gluons to condense into confined states. It is here where matter as we know it today forms and the universe becomes hadronic-matter dominated. In the temperature range $ 60\ \mathrm{MeV}>T>20\ \mathrm{MeV}$ the universe is rich in physics phenomena involving strange mesons and (anti)baryons including (anti)hyperon abundances \cite{Fromerth:2012fe,Yang:2021bko}.
-  \item  Electroweak plasma: For temperature $10\ \mathrm{MeV}>T>1\ \mathrm{MeV}$, the universe contained relativistic electrons, positrons, photons, and three species of neutrinos/antineutrinos. In this range, neutrinos were still coupled to the charged leptons via the weak interaction, and the properties of the universe are controlled by this electroweak plasma \cite{Birrell:2012gg}.
+  \item  Electroweak plasma: For temperature $10\ \mathrm{MeV}>T>1\ \mathrm{MeV}$, the universe contained relativistic electrons, positrons, photons, and three species of neutrinos/antineutrinos. In this range, neutrinos were still coupled to the charged leptons via the weak interaction, and the properties of the universe are controlled by this electroweak plasma \cite{Birrell:2012gg}. 
   \item  Electron-positron plasma: After neutrinos decoupled and become free-streaming, referred to as neutrino freezeout, from the cosmic plasma at $T=1\ \mathrm{MeV}$, the cosmic plasma was dominated by electrons, positrons, and photons. We have shown in \cite{Chris:2023abc} that this plasma existed until $T\approx0.02\ \mathrm{MeV}$ such that BBN occured within a rich electron-positron plasma.
   \item Electron-proton plasma: The final major plasma stage in the universe began after the annihilation of the majority of $e^{\pm}$ pairs leaving behind a residual amount of electrons determined by the baryon asymmetry in the universe and charge conservation. The universe was still opaque to photons at this point and remained so until the recombination period at $T\approx0.26\ \mathrm{eV}$ starting the era of observational consmology with the CMB.
 \end{itemize}
@@ -383,7 +383,7 @@ In this case, given the magnetic field $B$ we can solve the chemical potential $
 \begin{figure}[h]
 %\begin{center}
 \centering
-\includegraphics[width=0.75\linewidth]{ChemicalPotential_Final.jpg}
+\includegraphics[width=\linewidth]{ChemicalPotential_Final.jpg}
 \caption{The chemical potential $\eta_{e}/T$ a function of temperature $20<T<60$keV.  It shows that the chemical potential is not sensitive to the magnetic field $b_0$.}
 \label{chemical_fig} 
 \end{figure}
@@ -424,13 +424,35 @@ Using the magnetic field $b_0$ and proton density $n_p/T^3$ we solve the magneti
 %\begin{center}
 \centering
 %\includegraphics[width=0.75\linewidth]{./plots/ChemicalPotential_case2.jpg}
-\includegraphics[width=0.75\linewidth]{Magnetization_Final.jpg}
+\includegraphics[width=\textwidth]{Magnetization_Final.jpg}
 \caption{The chemical potential $\eta_{e}/T$(upper) and magnetization $M/B$(lower) as a function of temperature $20<T<60$keV  for the case 2.  It shows that for giving $b_0$ we can find the temperature that $M/B>1$ in early universe.}
 \label{Case2_fig} 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Neutrino freezeout in early universe}
+The relic neutrino background is believed to be a  well preserved probe of a Universe only a second old. The properties of the neutrino background are influenced by the details of the freeze-out or decoupling process at a temperature $T=\mathcal{O}(1\,MeV)$, which is in turn controlled by the  standard model (SM) of particle physics  parameters.  
+In the paper \cite{Birrell:2014uka} we explore the dependence of freezeout temperature  on the value of natural constants within realm of known interactions. We show that freezeout temperature depends only on the magnitude of the Weinberg angle in the form $\sin^2\theta_W$ , and a dimensionless relative interaction strength parameter $\eta$,
+\begin{align}
+\eta\equiv M_p m_e^3 G_F^2, \qquad M_p^2\equiv \frac{1}{8\pi G_N}, \end{align}
+a combination of  the electron mass $m_e$, Newton constant $G_N$, and the Fermi constant $G_F$. The dimensionless interaction strength parameter $\eta$ with the vacuum present day value is given by
+\begin{align}
+\eta_0\equiv \left.M_p m_e^3 G_F^2\right|_0  = 0.04421 .
+\end{align}
+The magnitude of  $\sin^2\theta_W$ is not fixed within the SM and  could be subject to variation as function of time or temperature. In Fig.(\ref{fig:freezeoutT}) we show the dependence of neutrino freezeout temperatures for $\nu_e$ and $\nu_{\mu,\tau}$ on SM model parameters  $\sin^2\theta_W$ and $\eta$ in detail.
+
+%~figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{figure}%[H]
+\centerline{\includegraphics[width=0.47\columnwidth]{nu_e_freezeout.eps}
+\hspace{1mm}\includegraphics[width=0.47\columnwidth]{nu_mu_freezeout.eps}}
+\centerline{\includegraphics[width=0.47\columnwidth]{nu_e_freezeout_GF.eps}
+\hspace{1mm}\includegraphics[width=0.47\columnwidth]{nu_mu_freezeout_GF.eps}}
+\caption{Freeze-out temperatures for electron neutrinos (left) and $\mu$, $\tau$ neutrinos (right) for the three types of processes, see text. Top panels as functions of $\sin^2\theta_W$ for $\eta=\eta_0$, vertical line is $\sin^2\theta_W=0.23$; bottom panels  as a function  of relative change in interaction strength $\eta/\eta_0$ obtained  for $\sin^2\theta_W=0.23$ .}\label{fig:freezeoutT}%\label{fig:Weinberg_freezeout}\label{fig:GF_freezeout}
+ \end{figure}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \reftitle{References}
@@ -520,9 +542,25 @@ doi:10.1140/epja/i2019-12715-5
 %\cite{Rafelski:2022bsv}
 \bibitem{Rafelski:2022bsv}
 J.~Rafelski, S.~Evans and L.~Labun,
-%``Study of QED singular properties for variable gyromagnetic ratio $g\simeq 2$,''
+``Study of QED singular properties for variable gyromagnetic ratio $g\simeq 2$,''
 [arXiv:2212.13165 [hep-th]].
 %0 citations counted in INSPIRE as of 16 Mar 2023
+
+\cite{Birrell:2014uka}
+\bibitem{Birrell:2014uka}
+J.~Birrell, C.~T.~Yang and J.~Rafelski,
+``Relic Neutrino Freeze-out: Dependence on Natural Constants,''
+Nucl. Phys. B \textbf{890}, 481-517 (2014)
+doi:10.1016/j.nuclphysb.2014.11.020
+
+%\cite{Fromerth:2012fe}
+\bibitem{Fromerth:2012fe}
+M.~J.~Fromerth, I.~Kuznetsova, L.~Labun, J.~Letessier and J.~Rafelski,
+%``From Quark-Gluon Universe to Neutrino Decoupling: 200 \ensuremath{<} T \ensuremath{<} 2MeV,''
+Acta Phys. Polon. B \textbf{43}, no.12, 2261-2284 (2012)
+doi:10.5506/APhysPolB.43.2261
+[arXiv:1211.4297 [nucl-th]].
+%17 citations counted in INSPIRE as of 17 Mar 2023
  
 %\bibitem{Aksenov:2007}
 %A. G. Aksenov, R. Ruffini, and G. V. Vereshchagin
