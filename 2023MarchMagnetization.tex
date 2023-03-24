@@ -103,7 +103,7 @@ At an early time in the standard cosmology model, the universe began as a fireba
 \begin{figure}[h]
   %\begin{center}
   \centering
-  \includegraphics[width=0.75\linewidth]{./plots/NewDensity_cm3.jpg}
+  \includegraphics[width=\linewidth]{./plots/NewDensity_cm3.jpg}
   \caption{The electron(positron) number density as a function of temperature in the range $2\,\mathrm{MeV}>T>10\,\mathrm{keV}$. The blue solid line is the electron density, the red solid line is the positron density, and the brown solid line is the baryon density. For comparison, we also show the green dotted line as the solar electron density within the stellar core. This reveals we have an electron-positron rich plasma in early universe until $T_{\mathrm{split}} = 20.36\ \mathrm{keV}$, for $T<T_{\mathrm{split}}$ the positron density quickly vanishes because of annihilation leaving only a residual electron density as required by charge conservation.}
   \label{Density_fig} 
 \end{figure}
@@ -222,7 +222,7 @@ yielding a range of field strengths
 during which the electron-positron plasma in the universe had a number density comparable to that of the Solar core with $n_{e}=4.49\times10^{24}\ \mathrm{cm}^{-3}$ at $r=0.01R_{\odot}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Partition function}
+\section{Electron-positron plasma}
 \noindent We now turn our attention now to the statistical behavior of the $e^{\pm}$ system. We can utilize the general fermion partition function given by
 \begin{align}
   \label{PartFunc} \ln\mathcal{Z}=\sum_{\alpha}\ln\left(1+e^{-\beta(E-\eta)}\right)\,,
@@ -230,106 +230,47 @@ during which the electron-positron plasma in the universe had a number density c
 where $\beta=1/T$, $\alpha$ is the set of all quantum numbers in the system, and $\eta$ is the generalized chemical potential. The magnetized $e^{\pm}$ system should be considered a system of four quantum species: Particles and anti-particles, and spin aligned and anti-aligned. Taken together we consider a system where all electrons and positrons are spin aligned or anti-aligned with the magnetic field $B$ and the partition function of the system is written as
 \begin{align}
 \ln\mathcal{Z}_{tot}=\frac{2eBV}{(2\pi)^2}\sum_{n=0}^\infty\int^\infty_{0} \!\!dp_z\bigg[&\ln\left(1+ e^{-\beta(E_{n}^+-\eta_{e}-\eta_s)}\right)+\ln\left(1+e^{-\beta(E_{n}^--\eta_{e}+\eta_s)}\right)\notag\\
-&+\ln\left(1+e^{-\beta(E_{n}^++\eta_{e}+\eta_s)}\right)+\ln\left(1+e^{-\beta(E_{n}^-+\eta_{e}-\eta_s)}\right)\bigg],
+&+\ln\left(1+e^{-\beta(E_{n}^++\eta_{e}{\color{red}-}\eta_s)}\right)+\ln\left(1+e^{-\beta(E_{n}^-+\eta_{e}{\color{red}+}\eta_s)}\right)\bigg],
 \end{align}
 where $\eta_{e}$ is the electron chemical potential and $\eta_s$ is the spin chemical potential and energy $E_{n}^\pm$ can be written as
 \begin{align}
 E_{n}^\pm&=\sqrt{p^2_z+\tilde m^2_\pm+2eBn},\qquad\tilde{m}^2_\pm=m^2_e+eB\left(1\mp\frac{g}{2}\right)\,,
 \end{align}
-where the $\pm$ script refers to spin aligned and anti-aligned eigenvalues. To simplify the partition function we consider the case $\eta_s/T\ll1$ for the first approximation and use the expansion of the logarithmic function into a power series yielding
-\begin{align}
-  \label{PowerLaw}\ln\left(1+x\right)=\sum^{\infty}_{k=1}\frac{(-1)^{k+1}}{k}x^k, \,\,\,\,\,\,\,\mathrm{for}\,|x|<1.
-\end{align}
-We emphasize that this expansion is only value where the Boltzmann factor $\exp\left(-\beta(E\pm\eta_{e})\right)$ remains less than unity, otherwise the partition function becomes divergent and ill-behaved. The partition function of $e^{\pm}$ system can be further expanded to isolate the contribution of the chemical potential $\eta_{e}$ as
-\begin{align}
-  \label{PartTotal}\ln\mathcal{Z}_{tot}
-  &=\frac{2eBV}{(2\pi)^2}\sum_{n=0}^\infty\sum^{\infty}_{k=1}\frac{(-1)^{k+1}}{k}\bigg[e^{k\beta\eta_{e}}+e^{-k\beta\eta_{e}}\bigg]\left(\int_0^\infty dp_z\,e^{-k\beta E_n^+}+\int_0^\infty dp_z\,e^{-k\beta E_n^-}\right)\notag\\
-  &=\frac{2eBTV}{(2\pi)^2}\sum^{\infty}_{k=1}\frac{(-1)^{k+1}}{k^2}\bigg[2\cosh{(k\beta\eta_{e})}\bigg]\sum_{n=0}^\infty \left(W^+_1(n,k)+ W^-_1(n,k)\right),
-\end{align}
-where we introduce the function $W^\pm_1(n,k)$ as follows
-\begin{align}
-W^\pm_1(n,k)\equiv\frac{k\sqrt{\tilde{m}^2_\pm+2eBn}}{T}\,\,K_1\!\!\left(\frac{k\sqrt{\tilde{m}^2_\pm+2eBn}}{T}\right),
-\end{align}
-defined in terms of the modified (hyperbolic) Bessel function of the second kind $K_{i}(x)$. We then utilize the Euler-Maclaurin formula to replace the sum over Landau levels with an integration yielding
-\begin{align}
-  \label{EMIntegration}\sum^{\infty}_{n=0}W^\pm_1(n,k)=\int^\infty_0\!\!dn\,W^\pm_1(n,k)+\frac{1}{2}\bigg[W^\pm_1(\infty,k)+W^\pm_1(0,k)\bigg]+\frac{1}{12}\bigg[\left.\frac{\partial W^\pm_1}{\partial n}\right|_{\infty}-\left.\frac{\partial W^\pm_1}{\partial n}\right|_{0}\bigg]+R\,,
-\end{align}
-where $R$ is the error remainder which is defined by integrals over Bernoulli polynomials. The error remainder has, for well behaved functioned, a finite size and therefore for a more extensive analysis is required to demonstrate to what order in Bessel functions is required to minimize the error remainder for good results. For \req{EMIntegration}, we've chosen to include up to the first order in derivatives. Using the asymptotic properties of Bessel function $K_{i}(x)$ as $x$ becomes large, we can simplify the above expression to obtain
-\begin{align}
-  \label{Winitial}\sum^{\infty}_{n=0}W^\pm_1(n,k)&=\int^\infty_0\!\!dn\,W^\pm_1(n,k)+\frac{1}{2}W^\pm_1(0,k)-\frac{1}{12}\left.\frac{\partial W^\pm_1}{\partial n}\right|_{0}+R\\
-  \label{WReplacement}
-  &=\left(\frac{T^2}{k^2eB}\right)x_{\pm}^{2}K_{2}(x_{\pm})+\frac{1}{2}x_{\pm}K_{1}(x_{\pm})+\frac{1}{12}\left(k^2b_0\right)K_{0}(x_{\pm})+R\,,\qquad x_{\pm} = \frac{k\tilde{m}_{\pm}}{T}\,.
-\end{align}
-Here we see mathematically that the ground state $n=0$, which has no analogue in the classical continuum limit, contributes to a difference between the sum and integral formulations. Replacing the sum over Landau levels by the integral, the partition function can separated into three distinct parts
+where the $\pm$ script refers to spin aligned and anti-aligned eigenvalues. In following we considering the case $\eta_s/T\ll1$ for the first approximation and Boltzmann approximation for nonrelativistic electrons and positrons. Using the Euler-Maclaurin formula to replace the sum over Landau levels with an integration yielding
 \begin{align}
   \ln\mathcal{Z}_{tot}=\ln\mathcal{Z}_{free}+\ln\mathcal{Z}_B+\ln\mathcal{Z}_R\,,
 \end{align}
 where we define 
 \begin{align}
-  \label{FreePart}&\ln\mathcal{Z}_{free}=\frac{T^3V}{2\pi^2}\sum^{\infty}_{k=1}\frac{(-1)^{k+1}}{k^4}\left[2\cosh{\left(\frac{k\eta_{e}}{T}\right)}\right]\sum_{i=\pm}x_i^2K_2\left(x_i\right)\,,\\
-  \label{MagPart}&\ln\mathcal{Z}_B=\frac{eBTV}{2\pi^2}\sum^{\infty}_{k=1}\frac{(-1)^{k+1}}{k^2}\left[2\cosh{\left(\frac{k\eta_{e}}{T}\right)}\right]\sum_{i=\pm}\bigg[\frac{x_i}{2}K_1\left(x_i\right)+\frac{k^2b_0}{12}K_0\left(x_i\right)\bigg]\,,\\
-  \label{ErrorPart}&\ln\mathcal{Z}_R=\frac{eBTV}{\pi^2}\sum^{\infty}_{k=1}\frac{(-1)^{k+1}}{k^2}\left[2\cosh{\left(\frac{k\eta_{e}}{T}\right)}\right]R.
+  \label{FreePart}&\ln\mathcal{Z}_{free}=\frac{T^3V}{2\pi^2}\left[2\cosh{\left(\frac{\eta_{e}}{T}\right)}\right]\sum_{i=\pm}x_i^2K_2\left(x_i\right)\,,\\
+  \label{MagPart}&\ln\mathcal{Z}_B=\frac{eBTV}{2\pi^2}\left[2\cosh{\left(\frac{\eta_{e}}{T}\right)}\right]\sum_{i=\pm}\bigg[\frac{x_i}{2}K_1\left(x_i\right)+\frac{k^2b_0}{12}K_0\left(x_i\right)\bigg]\,,\\
+  \label{ErrorPart}&\ln\mathcal{Z}_R=\frac{eBTV}{\pi^2}\left[2\cosh{\left(\frac{\eta_{e}}{T}\right)}\right]R.
 \end{align}
+where $R$ is the error remainder which is defined by integrals over Bernoulli polynomials.
 While this would require further derivation to demonstrate explicitly, the benefit of the Euler-Maclaurin approach is if the error contribution remains finite or bound for the magnetized partition function, then a correspondence between the free Fermi partition function (with noticeably modified magnetic-mass $\tilde{m}_{\pm}$) and the magnetized Fermi partition function can be established. The mismatch between the summation and integral in the Euler-Maclaurin formula would then encapsulate the immediate magnetic response and deviation from the free particle phase space.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Non-relativistic limit of the partition function}
-While we label $\ln(\mathcal{Z}_{free})$ in \req{FreePart} as the \lq\lq free\rq\rq\ partition function, this is not strictly true as this contribution to the overall partition function is a function of the magnetic-mass we defined earlier in \req{MagMass}. When determining the magnetization of the quantum Fermi gas, derivatives of the magnetic field $B$ will not fully vanish on this first term which will resulting in an intrinsic magnetization which is distinct from the contribution from the ground state and mismatch between the quantized Landau levels and the continuum of the free momentum. Specifically, this free Fermi contribution represents the magnetization that arises from the spin magnetic energy rather than orbital contributions. To demonstrate this, we will briefly consider the weak field limit for $g=2$. The magnetic-mass, for $g=2$, have the following values
-\begin{align}
-  \label{MagMassPlus} \tilde{m}_{+}^{2}&=m_{e}^{2}\,,\\
-  \label{MagMassMinus} \tilde{m}_{-}^{2}&=m_{e}^{2}+2eB\,.
-\end{align}
-The energy eigenvalues are then
-\begin{align}
-  \label{EPlus} E_{n}^{+}=\sqrt{p_{z}^{2}+m_{e}^{2}+2eBn}\,,\\
-  \label{EMinus} E_{n}^{-}=\sqrt{\left(E_{n}^{+}\right)^{2}+2eB}\,,
-\end{align}
-The spin anti-aligned energies specifically in the non-relativistic limit reduce to
-\begin{align}
-  \label{EMinusNR} E_{n}^{-}\vert_{NR}\approx E_{n}^{+}\vert_{NR}+\frac{eB}{m_{e}}\,.
-\end{align}
-This shift in energies is otherwise not influenced by summation over principle quantum number $n$ or summation parameter $k$, therefore we can interpret this energy shift as a shift in the chemical potential of the species. Introducing a non-relativistic spin-dependant chemical potential
-\begin{align}
-  \label{SpinChem} \eta_{e}^{\pm}=\eta_{e}\pm\frac{eB}{2m_{e}}\,,
-\end{align}
-we can rewrite the total partition function in \req{PartTotal} as
-\begin{align}
-  \label{PartTotalNR} \ln\mathcal{Z}_{tot}\vert_{NR}&=\frac{2eBV}{(2\pi)^{2}}\sum_{n=0}^{\infty}\sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{k}\left[2\cosh(k\beta\eta_{e}^{+})+2\cosh(k\beta\eta_{e}^{-})\right]\int_{0}^{\infty}dp_{z}e^{-k\beta\epsilon_{n}}\,,\\
-  \label{NREnergy} \epsilon_{n}&=m_{e}+\frac{p_{z}^{2}}{2m_{e}}+\frac{eB}{2m_{e}}\left(n+1\right)\,.
-\end{align}
-\req{PartTotalNR} is then the traditional NR quantum harmonic oscillator partition function with a spin dependant chemical potential shift differentiating the aligned and anti-aligned states. We note that in this formulation, the spin contribution is entirely excised from the orbital contribution to the partition function merely acting as a constant coefficient. Under Euler-Maclaurin integration, the now spin-independant Boltzmann factor can be further separated into \lq\lq free\rq\rq\ and Landau quantum parts as was done in \req{FreePart} - \req{ErrorPart} for the relativistic case. The non-relativistic \lq\lq free\rq\rq\ partition function is then identical to the free fermion partition function with a simple modification from the intrinsic spin energies. We note however that the inclusion of anomalous magnetic moment (AMM) spoils this clean separation therefore, we take the above as only useful as a limit or approximation of the physical system. {\xred ANDREW: I would like to demonstrate this above paragraph mathematically, though this might just be considered a corollary point more appropriate for a subsequent paper.}
-
-Another approach to the non-relativistic electron-positron plasma is to consider the partition function obtained in \req{FreePart} - \req{ErrorPart} in the Boltzmann approximation $k=1$ and assuming the error remainder $R$ is small and can be neglected. Here we will not limit ourselves to $g=2$ and allow the g-factor to be arbitrary in value. In this case, we have
-%\begin{align}
-%  \label{lnZIntermediate}\ln\mathcal{Z}_{tot}=&\frac{T^3V}{(2\pi)^2}\left[2\cosh\left(\frac{\eta_{e}}%{T}\right)\right]\left(\frac{\tilde m_\pm}{T}\right)^{\!\!2} K_2\left(\frac{\tilde{m}_{\pm}}{T}\right)\notag\\%{2}\left(\frac{\tilde m_\pm}{T}\right)K_1\left(\frac{\tilde{m}_{\pm}}{T}\right)+\frac{1}{12}\left(\frac{eB}{T^2}\right)K_0\left(\frac{\tilde{m}_{\pm}}{T}\right)\right]\,.
-%\end{align}
-%{\xred ANDREW: I don't agree with the above and below equations because this represents the total partition function which means it needs to be a sum of both polarizations. This inflicts a lot of your further analysis where you use charge neutrality because you're using quantities which functions of $x_{\pm}$ which is ambiguous as these are different. Rather we need to write sums. I see you already starting writing the explicit sums in the beginning of the Partition Function section, so that correction needs to continue throughout the paper.} The above equation \req{lnZIntermediate} can be simplified into the expression
+ Considering the error remainder $R$ is small and can be neglected. Here we will not limit ourselves to $g=2$ and allow the g-factor to be arbitrary in value. In this case, we have
 \begin{align}
   \label{lnZ}
   \ln\mathcal{Z}_{tot}=\frac{T^3V}{2\pi^2}\left[2\cosh\left(\frac{\eta_{e}}{T}\right)\right]\sum_{i=\pm}\left\{x_i^{2} K_2\left(x_i\right)+\frac{b_0}{2}x_iK_1\left(x_i\right)+\frac{b^2_0}{12}K_0\left(x_i\right)\right\}\,.
 \end{align}
-\req{lnZ} is the working model that the remainder of this work will focus on analyzing, but a comparison between it and the result in \req{PartTotalNR} is an important demonstration of the analytic behavior of the magnetized partition function. In the first approach, the integration preceeded the NR limit while in the latter it occured afterwards. This effectively switches the order of summation of states and summation of powers which should in principle be identical as long as $\ln\mathcal{Z}_{tot}$ is a well behaved function. This however is not immediately obvious and should be carefully considered for the given eigen-energies used in the analysis. We find the correspondance between both mathematical approaches remains valid as long as the magnetic field strength remains below the critical value noted in \req{MassLimit} and \req{MagMassFail} which also ensures the power-law expansion used in \req{PowerLaw} remains satisfied and the integration over Landau levels convergent.
+\req{lnZ} is the working model that the remainder of this work will focus on analyzing, but a comparison between it and the result in \req{PartTotalNR} is an important demonstration of the analytic behavior of the magnetized partition function. In the first approach, the integration preceeded the NR limit while in the latter it occured afterwards. This effectively switches the order of summation of states and summation of powers which should in principle be identical as long as $\ln\mathcal{Z}_{tot}$ is a well behaved function. This however is not immediately obvious and should be carefully considered for the given eigen-energies used in the analysis. We find the correspondance between both mathematical approaches remains valid as long as the magnetic field strength remains below the critical value noted in \req{MassLimit} and \req{MagMassFail} which also ensures the power-law expansion  remains satisfied and the integration over Landau levels convergent.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Chemical potential and Magnetization}
 \subsection{Charge neutrality and chemical potential}
- In this section we are interested in exploring the chemical potential of dense $e\bar e$ plasma in early universe under the hypothesis charge neutrality and entropy conservation. We focus on the temperature interval $2\,\mathrm{MeV}>T>10\,\mathrm{keV}$. Considering the homogeneous proton number density in the early universe,the charge neutrality can be written as
+ In this section we are interested in exploring the chemical potential of dense $e\bar e$ plasma in early universe under the hypothesis charge neutrality and entropy conservation. We focus on the temperature interval at post-BBN temperature range $20<T<50$keV. In this case, the charge neutrality can be written as
 \begin{align}
-  \label{density_proton}\left(n_{e}-n_{\bar{e}}\right)=n_{p}=\frac{n_{p}}{n_{B}}\,\left(\frac{n_{B}}{s_{\gamma,\nu,e}}\right)\,s_{\gamma,\nu,e}= X_p\left(\frac{n_B}{s_{\gamma,\nu}}\right)\,s_{\gamma,\nu},\qquad X_p=\frac{n_p}{n_B}
+  \label{density_proton}
+  \left(n_{e}-n_{\bar{e}}\right)=(n_{p})=\left(\frac{n_{p}}{n_{B}}\right)\,\left(\frac{n_{B}}{s_{\gamma,\nu,e}}\right)\,s_{\gamma,\nu,e}= X_p\left(\frac{n_B}{s_{\gamma,\nu}}\right)\,s_{\gamma,\nu},\qquad X_p=\frac{n_p}{n_B}
 \end{align}
 where $n_B$ is the number density of baryon, and the entropy density is obtained by considering the contribution of $e^\pm$ in entropy density is negligible compared to the photon and neutrino entropy density at post-BBN temperature $20<T<50$keV because the low density $n_e\ll n_{\gamma,\nu}$. 
 \begin{itemize}
-  \item The proton fraction $X_p$ can be written as follow:
-  \begin{align}
-  X_p=\frac{n_p}{n_B}=\frac{n_p}{n_p+n_n}=\frac{1}{1+n_n/n_p}
-  \end{align}
-Since all neutrons end up bound in to the $^4H_e$ after BBN, then the mass fraction of $^4H_e$ can be estimated as 
+  \item Since all neutrons end up bound in to the $^4H_e$ after BBN, then the mass fraction of $^4H_e$ can be estimated as \cite{ParticleDataGroup:2022pth}
 \begin{align}
-X_\alpha=\frac{2(n_n/n_p)}{1+n_n/n_p}=0.245\pm0.03
+X_\alpha=\frac{2(n_n/n_p)}{1+n_n/n_p}=0.245\pm0.03.
 \end{align} 
-where we use $X_\alpha=0.245\pm0.03$ from particle data group \cite{ParticleDataGroup:2022pth}. Solving the ratio $n_n/n_p$ and substituting into the $X_p$, we obtain
+ Solving the ratio $n_n/n_p$ and substituting into the $X_p$, we obtain
 \begin{align}
-X_p=0.878\pm0.015
+ X_p=\frac{n_p}{n_B}=\frac{n_p}{n_p+n_n}=\frac{1}{1+n_n/n_p}=0.878\pm0.015
 \end{align}
 
   \item Since the comoving baryon number and entropy are conserved, hence the ratio $s_{\gamma,\nu}/n_B$ is conserved, then the entropy per baryon ratio can be written as
@@ -338,37 +279,21 @@ X_p=0.878\pm0.015
 \end{align}
 where the subscript $t_0$ denotes the present-day value and considers all neutrinos are relativistic particles today. The entropy per particle for a boson is $(s/n)_\mathrm{boson}=3.601$ and for a fermion is $(s/n)_\mathrm{fermion}=4.202$. From particle data group and standard big bang model \cite{ParticleDataGroup:2022pth,Kolb:1990vq}, we have
 \begin{align}
-&5.8\times10^{-10}<\frac{n_B}{n_\gamma}<6.5\times10^{-10},\quad\frac{n_B}{n_\gamma}=6.14\times10^{10}(\mathrm{BBN\,\,observation}),\quad\frac{T_\nu}{T_\gamma}=\left(\frac{4}{11}\right)^{1/3}.
-\end{align}
-In this case, the entropy per baryon ratio  becomes
-\begin{align}
-\left(\frac{s_{\gamma,\nu}}{n_B}\right)_{\!\!t_0}=\frac{1}{6.14\times10^{-10}}\left[3.601+\frac{9}{4}\left(\frac{4}{11}\right)4.202\right]=1.14\times10^{10}
+&5.8\times10^{-10}<\frac{n_B}{n_\gamma}<6.5\times10^{-10},\quad\frac{T_\nu}{T_\gamma}=\left(\frac{4}{11}\right)^{1/3}.
 \end{align}
 
   \item The entropy density at temperature can be written as \cite{Kolb:1990vq}
 \begin{align}
 s=\frac{2\pi^2}{45}g_sT_\gamma^3,\qquad g_s=\sum_{i=boson}g_i\left(\frac{T_i}{T_\gamma}\right)^3+\frac{7}{8}\sum_{i=fermion}g_i\left(\frac{T_i}{T_\gamma}\right)^3
 \end{align}
-where $g_s$ is the effective degree of freedom that contribute to the entropy density.  In the temperature we are interested in $50>T>20$keV, the entropy density reads
-\begin{align}
-s_{\gamma,\nu}=\frac{2\pi^2}{45}g_sT_\gamma^3,\qquad g_s=g_\gamma+\frac{7}{8}g_\nu\left(\frac{T_\nu}{T_\gamma}\right)^3=2+\frac{7}{8}\,2\times3\left(\frac{4}{11}\right)=3.91
-\end{align}
+where $g_s$ is the effective degree of freedom that contribute to the entropy density.  
 \end{itemize}
-
-%Substituting above numerical results into \req{density_proton}, the proton number density is given by
-%\begin{align}
-%n_p= X_p\left(\frac{n_B}{s_{\gamma,\nu}}\right)\,s_{\gamma,\nu}=\frac{0.878\times3.91}{1.14\times10^{10}}\,\left(\frac{2\pi^2}{45}\right)T_\gamma^3=3.011\times10^{-10}\left(\frac{2\pi^2}{45}\right)T_\gamma^3
-%\end{align}
  
 On the other hand, given the partition function in Boltzmann limit \req{lnZ} the net number density of electron can be written as
 \begin{align}
 \left(n_e-n_{\bar e}\right)&=\frac{T}{V}\frac{\partial}{\partial \eta_{e}}\ln\mathcal{Z}_{tot}=\frac{T^3}{2\pi^2}\left[2\sinh{(\eta_{e}/T)}\right]\sum_{i=\pm}\left[x_i^2K_2(x_i)+\frac{b_0}{2}x_i K_1(x_i)+\frac{b^2_0}{12}K_0(x_i)\right]
 \end{align}
-In this case, the charge neutrality becomes
-\begin{align}
-X_p\left(\frac{n_B}{s_{\gamma,\nu}}\right)\,s_{\gamma,\nu}=\frac{T^3}{2\pi^2}\left[2\sinh{(\eta_{e}/T)}\right]\sum_{i=\pm}\left[x_i^2K_2(x_i)+\frac{b_0}{2}x_i K_1(x_i)+\frac{b^2_0}{12}K_0(x_i)\right]
-\end{align}
-Solving the chemical potential we obtain:
+Using the charge neutrality Eq.(\ref{density_proton}) and solving the chemical potential, we obtain:
 \begin{align}\label{ChemicalPotential}
 \sinh{(\eta_{e}/T)}&=\frac{2\pi^2}{2T^3}\,\frac{X_p(n_B/s_{\gamma,\nu})s_{\gamma,\nu}}{\sum_{i=\pm}\left[x_i^2K_2(x_i)+\frac{b_0}{2}x_i K_1(x_i)+\frac{b^2_0}{12}K_0(x_i)\right]}\\
 &\longrightarrow\frac{2\pi^2n_p}{2T^3}\,\frac{X_p(n_B/s_{\gamma,\nu})s_{\gamma,\nu}}{2x^2K_2(x)},\qquad x=m_e/T,\qquad \mathrm{for}\,\,b_0=0
@@ -376,22 +301,21 @@ Solving the chemical potential we obtain:
 It shows that for the case $b_0=0$ the chemical potential agrees with our earlier results \cite{Chris:2023abc}.
 In {\rf{chemical_fig}}, we solve the Eq.(\ref{ChemicalPotential}) numerically and plot the  chemical potential as a function of temperature $T$. It shows that the chemical potential is not sensitive to the magnetic field because the small value of $b_0=10^{-5}\sim10^{-11}$ and can be neglected in \req{ChemicalPotential}. 
 
-
-
-In this case, given the magnetic field $B$ we can solve the chemical potential $\eta_{e}$ as a function of temperature numerically.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
 %\begin{center}
 \centering
-\includegraphics[width=\linewidth]{ChemicalPotential_Final.jpg}
+\includegraphics[width=\linewidth]{ChemicalPotentialFinal_200keV.jpg}
 \caption{The chemical potential $\eta_{e}/T$ a function of temperature $20<T<60$keV.  It shows that the chemical potential is not sensitive to the magnetic field $b_0$.}
 \label{chemical_fig} 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In {\rf{chemical_fig}}, we plot the  chemical potential as a function of temperature $T$. It shows that the chemical potential is not sensitive to the magnetic field because the small value of $b_0=10^{-3}\sim10^{-8}$ and can be neglected in \req{ChemicalPotential}. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Magnetization}
-On the other hand, giving the partition function \req{lnZ} the magnetization can be obtained via the definition
+Given the partition function \req{lnZ} the magnetization can be obtained via the definition
 \begin{align}
 M=\frac{T}{V}\frac{\partial \ln\mathcal{Z}_{tot}}{\partial B}=\frac{T}{V}\left(\frac{\partial\tilde m_\pm}{\partial B}\right)\frac{\partial \ln\mathcal{Z}_{tot}}{\partial\tilde m_\pm}
 \end{align}
@@ -419,39 +343,200 @@ Substituting the magnetic field $b_0$ and proton density $n_p/T^3$  we can solve
 \end{align}
 Using the magnetic field $b_0$ and proton density $n_p/T^3$ we solve the magnetization  numerically. In \rf{Case2_fig}, we plot the  magnetization $M/B$ as a function of temperature $T$. It shows that the magnetization depends on the magnetic field $b_0$ strongly. This is because for a small magnetic field $b_0$ the dominant term in \req{Magnetization_002} is $xK_1(x)/b_0$. For given $b_0$, the value of magnetization can be larger than the magnetic field, i.e. $M/B>1$  which shows the possibility that magnetic domains can be formed in the early universe.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{figure}[h]
 %\begin{center}
 \centering
 %\includegraphics[width=0.75\linewidth]{./plots/ChemicalPotential_case2.jpg}
-\includegraphics[width=\textwidth]{Magnetization_Final.jpg}
+\includegraphics[width=\textwidth]{MagnetizationFinal_200keV.jpg}
 \caption{The chemical potential $\eta_{e}/T$(upper) and magnetization $M/B$(lower) as a function of temperature $20<T<60$keV  for the case 2.  It shows that for giving $b_0$ we can find the temperature that $M/B>1$ in early universe.}
 \label{Case2_fig} 
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Neutrino freezeout in early universe}
-The relic neutrino background is believed to be a  well preserved probe of a Universe only a second old. The properties of the neutrino background are influenced by the details of the freeze-out or decoupling process at a temperature $T=\mathcal{O}(1\,MeV)$, which is in turn controlled by the  standard model (SM) of particle physics  parameters.  
-In the paper \cite{Birrell:2014uka} we explore the dependence of freezeout temperature  on the value of natural constants within realm of known interactions. We show that freezeout temperature depends only on the magnitude of the Weinberg angle in the form $\sin^2\theta_W$ , and a dimensionless relative interaction strength parameter $\eta$,
-\begin{align}
-\eta\equiv M_p m_e^3 G_F^2, \qquad M_p^2\equiv \frac{1}{8\pi G_N}, \end{align}
-a combination of  the electron mass $m_e$, Newton constant $G_N$, and the Fermi constant $G_F$. The dimensionless interaction strength parameter $\eta$ with the vacuum present day value is given by
-\begin{align}
-\eta_0\equiv \left.M_p m_e^3 G_F^2\right|_0  = 0.04421 .
-\end{align}
-The magnitude of  $\sin^2\theta_W$ is not fixed within the SM and  could be subject to variation as function of time or temperature. In Fig.(\ref{fig:freezeoutT}) we show the dependence of neutrino freezeout temperatures for $\nu_e$ and $\nu_{\mu,\tau}$ on SM model parameters  $\sin^2\theta_W$ and $\eta$ in detail.
 
-%~figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{figure}%[H]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Cheng Tao: I hide the following section, but feel free to edit them if you think we should include some details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\subsection{Non-relativistic limit of the partition function}
+%While we label $\ln(\mathcal{Z}_{free})$ in \req{FreePart} as the \lq\lq free\rq\rq\ partition function, this is not strictly true as this contribution to the overall partition function is a function of the magnetic-mass we defined earlier in \req{MagMass}. When determining the magnetization of the quantum Fermi gas, derivatives of the magnetic field $B$ will not fully vanish on this first term which will resulting in an intrinsic magnetization which is distinct from the contribution from the ground state and mismatch between the quantized Landau levels and the continuum of the free momentum. Specifically, this free Fermi contribution represents the magnetization that arises from the spin magnetic energy rather than orbital contributions. To demonstrate this, we will briefly consider the weak field limit for $g=2$. The magnetic-mass, for $g=2$, have the following values
+%\begin{align}
+%  \label{MagMassPlus} \tilde{m}_{+}^{2}&=m_{e}^{2}\,,\\
+%  \label{MagMassMinus} \tilde{m}_{-}^{2}&=m_{e}^{2}+2eB\,.
+%\end{align}
+%The energy eigenvalues are then
+%\begin{align}
+%  \label{EPlus} E_{n}^{+}=\sqrt{p_{z}^{2}+m_{e}^{2}+2eBn}\,,\\
+%  \label{EMinus} E_{n}^{-}=\sqrt{\left(E_{n}^{+}\right)^{2}+2eB}\,,
+%\end{align}
+%The spin anti-aligned energies specifically in the non-relativistic limit reduce to
+%\begin{align}
+%  \label{EMinusNR} E_{n}^{-}\vert_{NR}\approx E_{n}^{+}\vert_{NR}+\frac{eB}{m_{e}}\,.
+%\end{align}
+%This shift in energies is otherwise not influenced by summation over principle quantum number $n$ or summation parameter $k$, therefore we can interpret this energy shift as a shift in the chemical potential of the species. Introducing a non-relativistic spin-dependant chemical potential
+%\begin{align}
+%  \label{SpinChem} \eta_{e}^{\pm}=\eta_{e}\pm\frac{eB}{2m_{e}}\,,
+%\end{align}
+%we can rewrite the total partition function in \req{PartTotal} as
+%\begin{align}
+%  \label{PartTotalNR} \ln\mathcal{Z}_{tot}\vert_{NR}&=\frac{2eBV}{(2\pi)^{2}}\sum_{n=0}^{\infty}\sum_{k=1}^{\infty}\frac{(-1)^{k+1}}{k}\left[2\cosh(k\beta\eta_{e}^{+})+2\cosh(k\beta\eta_{e}^{-})\right]\int_{0}^{\infty}dp_{z}e^{-k\beta\epsilon_{n}}\,,\\
+%  \label{NREnergy} \epsilon_{n}&=m_{e}+\frac{p_{z}^{2}}{2m_{e}}+\frac{eB}{2m_{e}}\left(n+1\right)\,.
+%\end{align}
+%\req{PartTotalNR} is then the traditional NR quantum harmonic oscillator partition function with a spin dependant chemical potential shift differentiating the aligned and anti-aligned states. We note that in this formulation, the spin contribution is entirely excised from the orbital contribution to the partition function merely acting as a constant coefficient. Under Euler-Maclaurin integration, the now spin-independant Boltzmann factor can be further separated into \lq\lq free\rq\rq\ and Landau quantum parts as was done in \req{FreePart} - \req{ErrorPart} for the relativistic case. The non-relativistic \lq\lq free\rq\rq\ partition function is then identical to the free fermion partition function with a simple modification from the intrinsic spin energies. We note however that the inclusion of anomalous magnetic moment (AMM) spoils this clean separation therefore, we take the above as only useful as a limit or approximation of the physical system. {\xred ANDREW: I would like to demonstrate this above paragraph mathematically, though this might just be considered a corollary point more appropriate for a subsequent paper.}
+
+%Another approach to the non-relativistic electron-positron plasma is to consider the partition function obtained in \req{FreePart} - \req{ErrorPart} in the Boltzmann approximation $k=1$ and assuming the error remainder $R$ is small and can be neglected. Here we will not limit ourselves to $g=2$ and allow the g-factor to be arbitrary in value. In this case, we have
+%\begin{align}
+%  \label{lnZIntermediate}\ln\mathcal{Z}_{tot}=&\frac{T^3V}{(2\pi)^2}\left[2\cosh\left(\frac{\eta_{e}}%{T}\right)\right]\left(\frac{\tilde m_\pm}{T}\right)^{\!\!2} K_2\left(\frac{\tilde{m}_{\pm}}{T}\right)\notag\\%{2}\left(\frac{\tilde m_\pm}{T}\right)K_1\left(\frac{\tilde{m}_{\pm}}{T}\right)+\frac{1}{12}\left(\frac{eB}{T^2}\right)K_0\left(\frac{\tilde{m}_{\pm}}{T}\right)\right]\,.
+%\end{align}
+%{\xred ANDREW: I don't agree with the above and below equations because this represents the total partition function which means it needs to be a sum of both polarizations. This inflicts a lot of your further analysis where you use charge neutrality because you're using quantities which functions of $x_{\pm}$ which is ambiguous as these are different. Rather we need to write sums. I see you already starting writing the explicit sums in the beginning of the Partition Function section, so that correction needs to continue throughout the paper.} The above equation \req{lnZIntermediate} can be simplified into the expression
+%\begin{align}
+%  \label{lnZ}
+%  \ln\mathcal{Z}_{tot}=\frac{T^3V}{2\pi^2}\left[2\cosh\left(\frac{\eta_{e}}{T}\right)\right]\sum_{i=\pm}\left\{x_i^{2} K_2\left(x_i\right)+\frac{b_0}{2}x_iK_1\left(x_i\right)+\frac{b^2_0}{12}K_0\left(x_i\right)\right\}\,.
+%\end{align}
+%\req{lnZ} is the working model that the remainder of this work will focus on analyzing, but a comparison between it and the result in \req{PartTotalNR} is an important demonstration of the analytic behavior of the magnetized partition function. In the first approach, the integration preceeded the NR limit while in the latter it occured afterwards. This effectively switches the order of summation of states and summation of powers which should in principle be identical as long as $\ln\mathcal{Z}_{tot}$ is a well behaved function. This however is not immediately obvious and should be carefully considered for the given eigen-energies used in the analysis. We find the correspondance between both mathematical approaches remains valid as long as the magnetic field strength remains below the critical value noted in \req{MassLimit} and \req{MagMassFail} which also ensures the power-law expansion used in \req{PowerLaw} remains satisfied and the integration over Landau levels convergent.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Neutrino freezeout in early universe}
+The relic neutrino background is believed to be a  well preserved probe of a Universe only a second old. The properties of the neutrino background are influenced by the details of the freeze-out or decoupling process at a temperature $T=\mathcal{O}(1\,MeV)$. In general The freeze-out process, whereby a particle species stops interacting and decouples from the photon background, involves several steps that lead to the final form of the free-streaming momentum distribution. We outline the freezeout properties, including what distinguishes it from the equilibrium distributions as follow\cite{Birrell:2012gg}:
+\begin{itemize}
+  \item
+Chemical freeze-out of a particle species occurs at the temperature, 
+$T_{ch}$, when particle number changing processes slow down and the particle abundance can no longer be maintained at an equilibrium level. Prior to the  chemical freeze-out temperature,  number changing processes are significant and keep the particle in chemical (and thermal) equilibrium, implying that the distribution function has the Fermi-Dirac form, obtained by maximizing entropy at fixed energy
+\begin{equation}\label{equilibrium}
+f_{c}(t,E)=\frac{1}{\exp(E/T)+1}, \text{ for } T(t)> T_{ch}.
+\end{equation}
+
+\item
+Kinetic freeze-out occurs at the temperature, $T_f$, when momentum exchanging interactions no longer occur rapidly enough to maintain an equilibrium momentum distribution. When $T_f<T(t)<T_{ch}$, number changing process  no longer occur rapidly enough to keep the distribution in chemical equilibrium but there is still sufficient momentum exchange to keep the distribution in thermal equilibrium.  The distribution function is therefore obtained by maximizing entropy, with a fixed energy, particle number, and antiparticle number separately,  implying that the distribution function has the form
+\begin{equation}\label{kinetic_equilib}
+f_k(t,E)=\frac{1}{\Upsilon^{-1}\exp(E/T)+1}, \text{ for }T_f< T(t)< T_{ch}.
+\end{equation}
+The fugacity
+\begin{equation}
+\Upsilon(t)\equiv e^{\sigma(t)}
+\end{equation}
+ controls the occupancy of phase space and is necessary once $T(t)<T_{ch}$ in order to conserve particle number. See \cite{Birrell:2012gg} for a detailed discussion of its significance.
+ 
+\item
+For $T(t)<T_f$ there are no longer any significant interactions that couple the particle species of interest and so they begin to free-stream through the Universe, i.e. travel on geodesics without scattering.  The Einstein Vlasov equation can be solved, see \cite{Choquet-Bruhat:2009xil}, to yield the free-streaming momentum distribution
+\begin{equation}\label{free_stream_dist}
+f(t,E)=\frac{1}{\Upsilon^{-1}e^{\sqrt{p^2/T^2+m^2 /T_f^2}}+ 1}
+\end{equation}
+where the free-streaming effective temperature
+\begin{equation}\label{T_freestream_dist}
+T(t)=\frac{T_fa(t_k)}{a(t)}
+\end{equation}
+is obtained by redshifting the temperature at kinetic freeze-out. The corresponding free-streaming energy density, pressure, and number densities are given by
+\begin{align}
+\rho&=\frac{d}{2\pi^2}\!\int_0^\infty\!\!\!\frac{\left(m^2+p^2\right)^{1/2}p^2dp }{\Upsilon^{-1}e^{\sqrt{p^2/T^2+m^2/T_f^2}}+ 1},\label{freestream_rho}\\[0.2cm]
+P&=\frac{d}{6\pi^2}\!\int_0^\infty\!\!\!\frac{\left(m^2+p^2\right)^{-1/2}p^4dp }{\Upsilon^{-1} e^{\sqrt{p^2/T^2+m^2/T_f^2}}+ 1},\label{freestream_P}\\[0.2cm]
+n&=\frac{d}{2\pi^2}\!\int_0^\infty\!\!\!\frac{p^2dp }{\Upsilon^{-1}e^{\sqrt{p^2/T^2+m^2/T_f^2}}+ 1},
+\label{num_density}
+\end{align}
+where $d$ is the degeneracy of the particle species. These differ from the corresponding expressions for an equilibrium distribution in Minkowski space by the replacement $m\rightarrow m T(t)/T_f$  {\em only} in the exponential. 
+\end{itemize}
+The separation of the freeze-out process into these three regimes is of course only an approximation.  In principle there is a smooth transition between them.  However, it is a very useful approximation in cosmology.  See \cite{Mangano:2005cc,Birrell:2014gea} for methods capable of resolving these smooth transitions.
+
+
+ %~figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{figure}[h]
 \centerline{\includegraphics[width=0.47\columnwidth]{nu_e_freezeout.eps}
 \hspace{1mm}\includegraphics[width=0.47\columnwidth]{nu_mu_freezeout.eps}}
 \centerline{\includegraphics[width=0.47\columnwidth]{nu_e_freezeout_GF.eps}
 \hspace{1mm}\includegraphics[width=0.47\columnwidth]{nu_mu_freezeout_GF.eps}}
-\caption{Freeze-out temperatures for electron neutrinos (left) and $\mu$, $\tau$ neutrinos (right) for the three types of processes, see text. Top panels as functions of $\sin^2\theta_W$ for $\eta=\eta_0$, vertical line is $\sin^2\theta_W=0.23$; bottom panels  as a function  of relative change in interaction strength $\eta/\eta_0$ obtained  for $\sin^2\theta_W=0.23$ .}\label{fig:freezeoutT}%\label{fig:Weinberg_freezeout}\label{fig:GF_freezeout}
+\caption{Freeze-out temperatures for electron neutrinos (left) and $\mu$, $\tau$ neutrinos (right) for the three types of processes adapted from paper \cite{Birrell:2014uka}. Top panels as functions of $\sin^2\theta_W$ for $\eta=\eta_0$, vertical line is $\sin^2\theta_W=0.23$; bottom panels  as a function  of relative change in interaction strength $\eta/\eta_0$ obtained  for $\sin^2\theta_W=0.23$ .}\label{fig:freezeoutT}%\label{fig:Weinberg_freezeout}\label{fig:GF_freezeout}
  \end{figure}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ To estimate the freezeout temperature we need to solve the Boltzmann equation with different types of collision terms. In paper\cite{Birrell:2014uka} we detail a new method for analytically simplifying the collision integrals and show that the neutrino freezeout temperature which is in turn controlled by the standard model (SM) of particle physics  parameters. The freezeout temperature depends only on the magnitude of the Weinberg angle in the form $\sin^2\theta_W$ , and a dimensionless relative interaction strength parameter $\eta$,
+\begin{align}
+\eta\equiv M_p m_e^3 G_F^2, \qquad M_p^2\equiv \frac{1}{8\pi G_N}, \end{align}
+a combination of  the electron mass $m_e$, Newton constant $G_N$, and the Fermi constant $G_F$. The dimensionless interaction strength parameter $\eta$ with the vacuum present-day value is given by
+\begin{align}
+\eta_0\equiv \left.M_p m_e^3 G_F^2\right|_0  = 0.04421 .
+\end{align}
+The magnitude of  $\sin^2\theta_W$ is not fixed within the SM and  could be subject to variation as a function of time or temperature. In Fig.(\ref{fig:freezeoutT}) we show the dependence of neutrino freezeout temperatures for $\nu_e$ and $\nu_{\mu,\tau}$ on SM model parameters  $\sin^2\theta_W$ and $\eta$ in detail.
+
+ The impact of SM parameter values on neutrino freeze-out and the discussion of the implications and connections of this work to other areas of physics, namely Big Bang nucleosynthesis and dark radiation can be found in detail in paper\cite{Birrell:2014uka}
+
+ 
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{energy density ratio between electron/positron and baryons}
+{\color{blue} Cheng Tao: I am not sure do we need to include this section in this paper, I just include here just in case if we need any ingredients for Introduction} 
+Considering the energy density between nonrealtivistc $e^\pm$ and baryon, it can be written as
+\begin{align}\label{Eq_ratio}
+\chi\equiv\frac{\rho_e+\rho_{\bar e}}{\rho_p+\rho_n}=\frac{m_e(n_e+n_{\bar e})}{m_pn_p+m_n n_n}=\frac{m_e(n_e+n_{\bar e})}{n_B(m_pX_p+m_nX_n)}=\left(\frac{n_e+n_{\bar e}}{n_B}\right)\,\left(\frac{m_e}{m_pX_p+{m_n X_\alpha}/2}\right)
+\end{align}
+where we consider all neutrons end up bound in to the $^4H_e$ after BBN  and from particle data group $X_p=n_p/n_B$ and $X_\alpha=n_\alpha/n_B$ and are given by
+\begin{align}
+X_p=0.878,\qquad X_\alpha=0.245
+\end{align}
+and masses are given by
+\begin{align}
+m_e=0.511\,\mathrm{MeV}, \qquad m_p=938.272\,\mathrm{MeV},\qquad m_n=939.565\,\mathrm{MeV}
+\end{align}
+In Fig.(\ref{ratio_fig}) we plot the energy density ratio Eq.(\ref{Eq_ratio}) as a function of temperature $10\,\mathrm{keV}< T<200\,\mathrm{keV}$. It shows that the energy density of electron and positron is dominated until $T=30.2$ keV, i.e.,  we have $\rho_{e}\gg\rho_B$. After $T=30.2$ keV, we have $\rho_{e}\ll\rho_B$ and ratio becomes constant when is around $T=20$keV because of the positron annihilation and charge neutrality.
+
+To estimate the energy density ratio for the low temperature limit $T\ll20$ keV, we can consider that all positrons disappear because of the annihilation. Then the energy density ratio becomes:
+\begin{align}
+\chi=\frac{\rho_e+\rho_{\bar e}}{\rho_p+\rho_\alpha}
+&=\left(\frac{n_e}{n_B}\right)\,\left(\frac{m_e}{m_pX_p+m_nX_\alpha/2}\right)=\left(\frac{n_p}{n_B}\right)\,\left(\frac{m_e}{m_pX_p+m_n X_\alpha/2}\right)\\
+&=X_p\,\left(\frac{m_e}{m_pX_p+m_nX_\alpha/2}\right)\approx4.78\times10^{-4}
+\end{align}
+where we use the charge neutrality $n_e=n_p$ to replace the electron density by proton density and we can calculate the ratio by giving the $X_p$ and $X_\alpha$ from observation.
+%~~~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{figure}[h]
+%\begin{center}
+\centering
+\includegraphics[width=\linewidth]{EnergyDensityRatio002.jpg}
+\caption{The energy density ratio Eq.(\ref{Eq_ratio}) as a function of temperature $10\,\mathrm{keV}< T<200\,\mathrm{keV}$. It shows that the energy density of electron and positron is dominated until $T=30.2$ keV, i.e.,  we have $\rho_{e}\gg\rho_B$.}
+\label{ratio_fig} 
+\end{figure}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cosmological strangeness abundance}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The pion abundance in the early universe}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The muon abundance in the early univese}
+Muon abundance is an important quantity required for the understanding of several fundamental questions regarding properties of the primordial Universe. Our interest in strangeness flavor freeze-out in the early Universe \cite{Yang:2021bko} requires the understanding of the abundance of muons in the early Universe. The specific question needing an answer is at which temperature muons remain in abundance (chemical) equilibrium established predominantly by electromagnetic and weak interaction processes, allowing detailed-balance back-reactions to influence strangeness abundance.
+
+In the the cosmic plasma muons can be produced by the interaction processes 
+\begin{align} 
+&\gamma+\gamma\longrightarrow\mu^++\mu^-,\qquad & e^++e^-\longrightarrow \mu^++\mu^-\;,\\
+&\pi^-\longrightarrow\mu^-+\bar{\nu}_\mu,\qquad & \pi^+\longrightarrow\mu^++\nu_\mu\;.
+\end{align}
+The back reaction for all above processes is in detailed balance, provided all particles shown on the right hand side (RHS) exist in chemical abundance equilibrium in the Universe. We recall the vacuum life time of pions $\tau_\pi=2.6033\times10^{-8}$ sec. 
+
+However, all produced muons can decay 
+\begin{equation}
+\mu^-\rightarrow\nu_\mu+e^-+\bar{\nu}_e,\qquad \mu^+\rightarrow\bar{\nu}_\mu+e^++\nu_e\,
+\end{equation} 
+with the vacuum life time $\tau_{\mu}=2.197 \times 10^{-6}\mathrm{sec}$. In the paper \cite{Rafelski:2021aey} we evaluate the production and decay rates of muons in the cosmic plasma as a function of temperature. This allows to determine when exactly the muon abundance disappears. In Fig(\ref{muon_fig}) we show the invariant thermal reaction rates per volume and time for the relvance muon reactions. By comparing the production and decay rates we obtain the temperature at which muons disappear from the universe is $T_\mathrm{dis} = 4.20$ MeV.
+
+%~~~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{figure}[h]
+%\begin{center}
+\centering
+\includegraphics[width=\linewidth]{MuonRate_New3.jpg}
+\caption{The thermal reaction rate per volume for different reactions as a function of temperature adapted from paper \cite{Rafelski:2021aey}. It shows that dominant reactions for $\mu^\pm$ production are ${\gamma+\gamma\to\mu^++\mu^-}$ and $e^++e^-\to\mu^++\mu^-$, and the total production rate cross the decay rate of $\mu^\pm$ at temperature $T_\mathrm{dis}\approx 4.20$ MeV.}
+\label{muon_fig} 
+\end{figure}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As the temperature decreases in the expanding Universe, the initially dominant production rates become smaller faster and cross the decay rates. Muon abundance disappears as soon as any decay rate is faster than the fastest production rate. Considering the slow speed of the Universe expansion the muon disappearance is sudden, the muon abundance thus disappears as soon as a decay rate crosses the dominant production rate. Specifically after the Universe cools below the temperature $T_\mathrm{dis} = 4.20$ MeV, the dominant reaction is the muon decay.
+
+The density ratio at $T=T_\mathrm{dis}$ is $n_{\mu^\pm}/n_\mathrm{B}(T_\mathrm{dis})\approx0.91$. This means that the muon abundance may still be able to influence baryon evolution because their number density is comparable to the baryon density. This offers a new and tantalizing model building opportunity for  baryon-antibaryon separation in the primordial Universe, strangelet formation, and perhaps other exotic primordial structure formation mechanisms.
+
+
+
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -524,7 +609,7 @@ ISBN: 0201626748, 9780201626742
 %\cite{Strickland:2012vu}
 \bibitem{Strickland:2012vu}
 M.~Strickland, V.~Dexheimer and D.~P.~Menezes,
-%``Bulk Properties of a Fermi Gas in a Magnetic Field,''
+``Bulk Properties of a Fermi Gas in a Magnetic Field,''
 Phys. Rev. D \textbf{86} (2012), 125032
 doi:10.1103/PhysRevD.86.125032
 [arXiv:1209.3276 [nucl-th]].
@@ -533,7 +618,7 @@ doi:10.1103/PhysRevD.86.125032
 %\cite{Steinmetz:2018ryf}
 \bibitem{Steinmetz:2018ryf}
 A.~Steinmetz, M.~Formanek and J.~Rafelski,
-%``Magnetic Dipole Moment in Relativistic Quantum Mechanics,''
+``Magnetic Dipole Moment in Relativistic Quantum Mechanics,''
 Eur. Phys. J. A \textbf{55} (2019) no.3, 40
 doi:10.1140/epja/i2019-12715-5
 [arXiv:1811.06233 [hep-ph]].
@@ -546,22 +631,42 @@ J.~Rafelski, S.~Evans and L.~Labun,
 [arXiv:2212.13165 [hep-th]].
 %0 citations counted in INSPIRE as of 16 Mar 2023
 
-\cite{Birrell:2014uka}
-\bibitem{Birrell:2014uka}
-J.~Birrell, C.~T.~Yang and J.~Rafelski,
-``Relic Neutrino Freeze-out: Dependence on Natural Constants,''
-Nucl. Phys. B \textbf{890}, 481-517 (2014)
-doi:10.1016/j.nuclphysb.2014.11.020
 
 %\cite{Fromerth:2012fe}
 \bibitem{Fromerth:2012fe}
 M.~J.~Fromerth, I.~Kuznetsova, L.~Labun, J.~Letessier and J.~Rafelski,
-%``From Quark-Gluon Universe to Neutrino Decoupling: 200 \ensuremath{<} T \ensuremath{<} 2MeV,''
+``From Quark-Gluon Universe to Neutrino Decoupling: 200 \ensuremath{<} T \ensuremath{<} 2MeV,''
 Acta Phys. Polon. B \textbf{43}, no.12, 2261-2284 (2012)
 doi:10.5506/APhysPolB.43.2261
 [arXiv:1211.4297 [nucl-th]].
 %17 citations counted in INSPIRE as of 17 Mar 2023
- 
+
+\bibitem{Birrell:2012gg}
+J.~Birrell, C.~T.~Yang, P.~Chen and J.~Rafelski,
+``Relic neutrinos: Physically consistent treatment of effective number of neutrinos and neutrino mass,''
+Phys. Rev. D \textbf{89}, 023008 (2014)
+doi:10.1103/PhysRevD.89.023008
+
+
+\bibitem{Birrell:2014gea}
+J.~Birrell, J.~Wilkening and J.~Rafelski,
+``Boltzmann Equation Solver Adapted to Emergent Chemical Non-equilibrium,''
+J. Comput. Phys. \textbf{281}, 896-916 (2015)
+doi:10.1016/j.jcp.2014.10.056
+
+\bibitem{Choquet-Bruhat:2009xil}
+Y.~Choquet-Bruhat,
+``General Relativity and the Einstein Equations,''
+Oxford University Press, 2009,
+ISBN 978-0-19-923072-3
+
+
+\bibitem{Rafelski:2021aey}
+J.~Rafelski and C.~T.~Yang,
+``The muon abundance in the primordial Universe,''
+Acta Phys. Polon. B \textbf{52}, 277 (2021)
+doi:10.5506/APhysPolB.52.277
+
 %\bibitem{Aksenov:2007}
 %A. G. Aksenov, R. Ruffini, and G. V. Vereshchagin
 %``Thermalization of Nonequilibrium Electron-Positron-Photon Plasmas,''
