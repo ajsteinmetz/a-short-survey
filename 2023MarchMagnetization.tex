@@ -171,7 +171,7 @@ characterized  by the scale parameter $a(t)$  of a spatially homogeneous  Univer
 \beqn\label{metric2}
 ds^2=c^2dt^2-a^2(t)\left[ dx^2+dy^2+dz^2\right].
 \eeqn
-We will work in units where $\hbar=1,c=1$.
+We will work in units where $\hbar=1,\ c=1$.
 
 The global Universe dynamics can be characterized by two  quantities: the Hubble parameter  $H$, a strongly time dependent quantity on cosmological time scales,  and the deceleration parameter $q$:
 \begin{align}
@@ -230,6 +230,8 @@ H_0=67.74\text{km/s/Mpc},\hspace{2mm} \Omega_b=0.05,\hspace{2mm} \Omega_c=0.26, 
 \end{equation}
  and integrate backward in time.  On the other hand, we start in the QGP era with an equation of state determined by an ideal gas of SM particles, combined with a perturbative QCD equation of state for quarks and gluons \cite{Borsanyi:2013bia}, and integrate forward in time. As the Universe continues to dilute from dark energy in the future, the cosmic equation of state is becoming well approximated by the de Sitter inflationary metric which is a special case of FLRW.
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{QGP Epoch}\label{sec:QGP}
 \subsection{Conservation Laws in QGP}\label{sec:Conservation}
@@ -260,7 +262,7 @@ where $L_f$ and $B_f$ are the lepton and baryon number for the given species $f$
 \end{align}
 where $s_f$ is the entropy density of given species $f$. As the expanding Universe remains in thermal equilibrium, the entropy is conserved within a co-moving volume. The baryon number within a co-moving volume is also conserved. As both quantities dilute with $1/a(t)^{3}$ within a normal volume, the ratio of the two is constant. This constraint does not become broken until spatial inhomogeneitiess from gravitational attraction becomes significant leading to increases in local entropy.
 \end{enumerate}
-At each temperature $T$, the above three conditions form a system of three coupled, nonlinear equations of the three chosen unknowns (here we have $\mu_d$, $\mu_e$, and $\mu_\nu$). In \rf{QGPchem1} we present numerical solutions to the conditions \req{QGP_Q}-\req{QGP_sB} and plot the chemical potentials as a function of time. As seen in the figure, the three potentials are in alignment during the QGP phase until the hadronization epoch where the down quark chemical potential diverges from the leptonic chemical potentials before reaching an asymptotic value at late times. This asymptotic value is given as approximately $1/3$ the mass of the nucleons and represents the confinement of the quarks into the protons and neutrons at the end of hadronization. This asymptotic limit is also shown in \rf{QGPchem2}. In \rf{QGPchem2} we present the down quark chemical potential for different values of the entropy-to-baryon ratio. While the $s/n_{B}$ ratio has large consequences for the plasma at high temperatures, the chemical potential is insensitive to this parameter at low temperatures as it converged to an asymptotic value as the Universe cools. Therefore the entropy to baryon value today greatly controls the quark content when the Universe was very hot. We note that the distribution of quarks in the QGP plasma does not remain fixed to the Fermi-Dirac distribution for thermal and entropic equilibrium. The quark partition function is instead
+At each temperature $T$, the above three conditions form a system of three coupled, nonlinear equations of the three chosen unknowns (here we have $\mu_d$, $\mu_e$, and $\mu_\nu$). In \rf{QGPchem1} we present numerical solutions to the conditions \req{QGP_Q}-\req{QGP_sB} and plot the chemical potentials as a function of time. As seen in the figure, the three potentials are in alignment during the QGP phase until the hadronization epoch where the down quark chemical potential diverges from the leptonic chemical potentials before reaching an asymptotic value at late times. This asymptotic value is given as approximately $1/3$ the mass of the nucleons and represents the confinement of the quarks into the protons and neutrons at the end of hadronization. This asymptotic limit is also shown in \rf{QGPchem2} where we present the down quark chemical potential for different values of the entropy-to-baryon ratio. While the $s/n_{B}$ ratio has large consequences for the plasma at high temperatures, the chemical potential is insensitive to this parameter at low temperatures as it converged to an asymptotic value as the Universe cools. Therefore the entropy to baryon value today greatly controls the quark content when the Universe was very hot. We note that the distribution of quarks in the QGP plasma does not remain fixed to the Fermi-Dirac distribution for thermal and entropic equilibrium. The quark partition function is instead
 \begin{align}
   \label{QuarkDistribution}\ln\mathcal{Z}_{\mathrm{quarks}}=\sum_{q}\ln\left(1+\Upsilon(t)e^{-\beta E_{q}}\right)\,,\qquad\Upsilon_{q}(t)=\gamma_{q}(t)\lambda_{q}\,,
 \end{align}
@@ -277,28 +279,34 @@ which is summed over all quarks and their quantum numbers. In \req{QuarkDistribu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection {Hubble exapnsion rate in QGP}
-In the early Universe within a temperature range $130\, \mathrm{GeV}>T>150\, \mathrm{MeV}$  we have the following particles:  photons, $8_c$-gluons, $W^\pm$, $Z^0$, three generations of $3_c$-quarks and leptons  in the primordial QGP.  The Hubble parameter can be written in terms of particle energy density $\rho_i$
+\subsection {Hubble expansion rate in QGP}
+\noindent In the early Universe within a temperature range $130\, \mathrm{GeV}>T>150\, \mathrm{MeV}$  we have the following particles:  photons, $8_c$-gluons, $W^\pm$, $Z^0$, three generations of $3_c$-quarks and leptons  in the primordial QGP.  The Hubble parameter can be written as the sum over particle energy densities $\rho_i$ for each species
 \begin{align}
-H^2=\frac{8\pi G}{3}\left(\rho_\gamma+\rho_{\mathrm{lepton}}+\rho_{\mathrm{quark}}+\rho_{g,{W^\pm},{Z^0}}\right),
+H^2=\frac{8\pi G_{N}}{3}\left(\rho_\gamma+\rho_{\mathrm{lepton}}+\rho_{\mathrm{quark}}+\rho_{g,{W^\pm},{Z^0}}\right),
 \end{align}
-where $G$ is the Newtonian constant of gravitation. The effectively massless particles and radiation dominate the speed of expansion of the Universe. The characteristic Universe expansion time constant $1/H$ is seen in Fig.~\ref{Creaction_fig} and Fig.(\ref{Breaction_fig}) (black solid line). In the epoch of interest to us the Hubble time is much longer than the lifespan and production time of the bottom and charm quarks.
+where $G_{N}$ is the Newtonian constant of gravitation. Ultra-relativistic particles (which are effectively massless) and radiation dominate the speed of expansion. The Universe's characteristic expansion time constant $1/H$ is seen in  \rf{BCreaction_fig}. During QGP, the Hubble time is much larger than the lifespan and production times of the bottom and charm quarks. Therefore, these heavier quark species remain in equilibrium as their processes occur much faster than the expansion of the Universe.
+
+The entropy density in a radiation-dominated universe at  can be written as \cite{Kolb:1990vq}
+\begin{align}
+s=\frac{2\pi^2}{45}g_sT_\gamma^3,\qquad g_s=\sum_{i=boson}g_i\left(\frac{T_i}{T_\gamma}\right)^3+\frac{7}{8}\sum_{i=fermion}g_i\left(\frac{T_i}{T_\gamma}\right)^3
+\end{align}
+where $g_s$ is the effective degree of freedom that contribute to the entropy density at that time.  Considering that the expanding Universe evolves conserving entropy and that baryon number following on the era of matter genesis is conserved. We have the constant  baryon-per-entropy ratio as follow
+\begin{align}
+\left(\frac{s}{n_B}\right)=\left(\frac{s}{n_B}\right)_{\!\!t_0}\!\!=\left(\frac{n_\gamma}{n_B}\right)_{\!\!t_0}\left(\frac{s_\gamma}{n_\gamma}+\frac{n_\nu}{n_\gamma}\frac{s_\nu}{n_\nu}\right)=\left(\frac{n_\gamma}{n_B}\right)_{\!\!t_0}\left[3.601+\frac{9}{4}\left(\frac{T_\nu}{T_\gamma}\right)^{\!\!3}4.202\right],
+\end{align}
+where the subscript $t_0$ denotes the present-day value and considers all neutrinos are relativistic particles today. The entropy per particle for a boson is $(s/n)_\mathrm{boson}=3.601$ and for a fermion is $(s/n)_\mathrm{fermion}=4.202$. From particle data group and standard big bang model \cite{ParticleDataGroup:2022pth,Kolb:1990vq}, we have
+\begin{align}
+&5.8\times10^{-10}<\frac{n_B}{n_\gamma}<6.5\times10^{-10},\quad\frac{T_\nu}{T_\gamma}=\left(\frac{4}{11}\right)^{1/3}.
+\end{align}
+Given $n_B/n_\gamma= (0.609\pm0.06)\times10^{-9}$, we obtain
+\begin{align}\label{BdS}
+\frac{n_B}{s}= \left.\frac{n_B}{s}\right|_{t_0}=(0.865\pm0.008)\times10^{-10} \;,
+\end{align}
+
+
 
 \subsection{Heavy flavor: bottom and charm in QGP}
-In the QGP epoch, the Up/down are massless quarks and retain the equilibrium via gluon/quark fusion. Strangeness retain the equilibrium via weak, electromagnetic, and strong interaction until $T\sim12$ MeV. In this section we focus on heavy bottom and charm quarks in QGP. In Fig.(\ref{bcDensity_fig}) we shows the thermal equilibrium abundance of quarks normalized by entropy density near to the QGP hadronization $0.15<T<0.3$ GeV. The charm abundance is $10^4\sim10^9$ time greater than the bottom quarks.This implies that the small bottom quark abundance is embedded in a large background comprising all lighter quarks and antiquarks, as well as gluons.
-
-%~~~~~~~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{figure} %[h]
-%\begin{center}
-\centering
-\includegraphics[width=\linewidth]{bcQuarkDensity_new.jpg}
-\caption{
-The thermal equilibrium abundance of quarks normalized by entropy density, as a function of temperature $0.15<T<0.3$ GeV.}
-\label{bcDensity_fig}
-%\end{center}
-\end{figure}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+\noindent In the QGP epoch, the up/down are massless quarks and retain the equilibrium via gluon/quark fusion. Strangeness retain the equilibrium via weak, electromagnetic, and strong interaction until $T\sim12$ MeV. In this section we focus on heavy bottom and charm quarks in QGP. 
 In the primordial QGP, the bottom/charm quarks can be produced via the strong interaction gluon/quark pair fusion processes and disappear via the weak interaction decay. We have
 \begin{align}
     q+q\longrightarrow b+\bar b, c+\bar c,\qquad g+g\longrightarrow b+\bar b, c+\bar c
@@ -309,33 +317,22 @@ for productions and
 &c\longrightarrow s+l+\nu_l,\qquad c\longrightarrow s+q+\bar{q}
 \end{align}
 for decay. The detail calculation of production and decay rate can be found in {\xblue reference}
-
-In Fig.(\ref{Creaction_fig}) we plot the relaxation time for production and decay of charm as a function of temperature. It shows the relaxation time for c-quark production is faster than the c-quark decay in QGP, and both of production and decay are smaller than the Hubble time $1/H$. The faster gluon/quark pair fusion keep the charm quark in chemical equilibrium until hadronization. After hadronization, charm quarks form heavy meson that decay into multi-particles very fast. The Charm disappears from particle inventory once the hadronization is formed. It shows that the massive charm quarks disappear from the universe rapidly after hadronization and can’t contribute to matter genesis.
 %~~~~~~~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{figure} %[h]
 %\begin{center}
 \centering
-\includegraphics[width=\linewidth]{BottomCharm.jpg}
-\caption{The relaxation time for charm production and decay as a function of temperature. For comparison, we also show the Hubble time $1/H$ as a function of temperature. It shows that the relaxation time for c-quark production is faster than the c-quark decay in QGP.
- }
-\label{Creaction_fig}
+\includegraphics[width=0.54\linewidth]{BottomCharm.jpg}\includegraphics[width=0.5\linewidth]{BQuarkReactionTime_bottom.jpg}
+\caption{ The relaxation time for charm (on left) and bottom (on right) production and decay as a function of temperature. On left: it shows that the relaxation time for c-quark production is faster than the c-quark decay in QGP. On right: it shows the competition between production and decay, and  establishes the temperature era for the abundance non-equilibrium of bottom quarks. For comparison, we also show the Hubble time $1/H$ as a function of temperature.}
+\label{BCreaction_fig}
 %\end{center}
 \end{figure}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In Fig.(\ref{Breaction_fig}) we plot the relaxation time for production and decay of bottom with different masses as a function of temperature. It shows that the relaxation time for b-quark production intersects with b-quark decay at different temperatures which depend on the mass of bottom. The competition between decay and production reactions require the study of dynamic bottom abundance in QGP.
-%~~~~~~~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\begin{figure} %[h]
-%\begin{center}
-\centering
-\includegraphics[width=\linewidth]{BQuarkReactionTime_bottom.jpg}
-\caption{The relaxation time for charm production and decay as a function of temperature. For comparison, we also show the Hubble time $1/H$ as a function of temperature. It shows the competition between production and decay, and  establishes the temperature era for the abundance non-equilibrium of bottom quarks.}
-\label{Breaction_fig}
-%\end{center}
-\end{figure}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In Fig.(\ref{BCreaction_fig})(on left) we plot the relaxation time for production and decay of charm as a function of temperature. It shows the relaxation time for c-quark production is faster than the c-quark decay in QGP, and both of production and decay are smaller than the Hubble time $1/H$. The faster gluon/quark pair fusion keep the charm quark in chemical equilibrium until hadronization. After hadronization, charm quarks form heavy mesons that decay into multi-particles very fast. The Charm disappears from particle inventory once the hadronization is formed. It shows that the massive charm quarks disappear from the universe rapidly after hadronization and can’t contribute to matter genesis.
 
-In paper {\xblue reference}, we study the population equation for bottom abundance and solve the fugacity parameter of bottom as a function of temperature. In Fig.(\ref{UpsilonBottom_fig}) we show the fugacity of bottom quark as a function of temperature $T=0.3\sim0.15\GeV$ for different masses of bottom quarks. In all cases, we have prolonged non-equilibrium and this happens since the decay and reformation rates of bottom quarks are comparable to each other. It also shows that  the smaller mass of bottom quark slows the strong interaction formation rate to the value of weak decays near to the phase transformation of QGP to HG phase.
+In Fig.(\ref{BCreaction_fig}) (on right) we plot the relaxation time for production and decay of the bottom with different masses as a function of temperature. It shows that the relaxation time for b-quark production intersects with b-quark decay at different temperatures which depend on the mass of the bottom. The competition between decay and production reactions requires the study of dynamic bottom abundance in QGP.
+
+In paper {\xblue reference}, we study the population equation for bottom abundance and solve the fugacity parameter of the bottom as a function of temperature. In Fig.(\ref{UpsilonBottom_fig}) we show the fugacity of the bottom quarks as a function of temperature $T=0.3\sim0.15\GeV$ for different masses of bottom quarks. In all cases, we have prolonged non-equilibrium and this happens since the decay and reformation rates of bottom quarks are comparable to each other. It also shows that  the smaller mass of the bottom quark slows the strong interaction formation rate to the value of weak decay near the phase transformation of QGP to HG phase.
 
 In this case, bottom flavor breaks the detail balance and disappearance from particle inventory during the epoch $T = 0.3 \sim0.15\GeV$ which is the essential condition for departure from the thermal equilibrium. Our results provide a strong motivation to explore the physics of baryon non-conservation involving the bottom quarks or bottonium mesons  in thermal environment. Given that the non-equilibrium of bottom flavor arises at relatively low QGP temperature allows the possibility for baryogenesis to be occurred in primordial QGP hadronization {\xblue add reference}.
 This result is of pivotal importance in this work as it establishes the temperature era for the abundance non-equilibrium of bottom quarks.
@@ -346,7 +343,7 @@ This result is of pivotal importance in this work as it establishes the temperat
 %\begin{center}
 \centering
 \includegraphics[width=\linewidth]{BquarkFugacity_tot.jpg}
-\caption{The fugacity of free bottom quark as a func- tion of temperature in the early Universe for $m_b = 4.2$GeV (blue), $m_b = 4.7 $GeV (black), and $m_b = 5.2$ GeV (red). }
+\caption{The fugacity of free bottom quark as a function of temperature in the early Universe for $m_b = 4.2$GeV (blue), $m_b = 4.7 $GeV (black), and $m_b = 5.2$ GeV (red). }
 \label{UpsilonBottom_fig}
 %\end{center}
 \end{figure}
@@ -356,10 +353,38 @@ This result is of pivotal importance in this work as it establishes the temperat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hadronic Epoch}\label{sec:Hadrons}
 \subsection{The Formation of Matter}\label{sec:Creation}
-\noindent It is in this epoch that the matter of the universe, including all the baryons which make up visible matter today, was created \cite{Rafelski:2019twp}. At a temperature of $T_{h}\approx150\MeV$ the quarks and gluons became confined condensing into the hadrons (both baryons and mesons). At this point, the number of baryon-antibaryon pairs was sufficiently high that the asymmetry (of $~1$ in $10^{9}$) would be essentially invisible until a temperature of between $40-50\MeV$. We note that CPT symmetry is protected by the lack of asymmetry in normal SM reactions to some large factor by the accumulation of scattering events. CPT is similarly restricted by the mass difference in the Kaons via the difference in strange-antistrange masses.
+\noindent It is in this epoch that the matter of the universe, including all the baryons which make up visible matter today, was created \cite{Rafelski:2019twp}. Unlike the fundamental particles, such as the quarks or W and Z, the mass of these hadrons is not due to the Higgs mechanism, but rather from the condensation of the QCD vacuum \cite{Roberts:2021xnz,Roberts:2022rxm}. At a temperature of $T_{h}\approx150\MeV$ the quarks and gluons became confined condensing into the hadrons (both baryons and mesons). During this period, the number of baryon-antibaryon pairs was sufficiently high that the asymmetry (of $~1$ in $10^{9}$) would be essentially invisible until a temperature of between $40-50\MeV$. We note that CPT symmetry is protected by the lack of asymmetry in normal SM reactions to some large factor by the accumulation of scattering events. CPT is similarly restricted by the mass difference in the Kaons via the difference in strange-antistrange masses.
 
-In \rf{hadron_content}, we present the fraction of visible radiation and matter split between the baryons, mesons, and light and leptons. For a brief period in the early Universe, the hadrons contribution to the energy density of the universe dwarfed that of radiation and leptons. This circumstance would not be true again until the late universe after recombination though by that point dark matter would become the dominant form of matter in the cosmos.
+The chemical potential of baryons can be determined by the conserved baryon-per-entropy ratio in adiabatic universe expansion. Considering the net baryon density in early Universe with temperature range $10< T< 150$\,MeV \cite{Yang:2021bko}:
+\begin{align}\label{Baryon_ChemicalPotential}
+\frac{\left(n_B-n_{\overline{B}}\right)}{s}&=\frac{1}{s}\left[\left(n_p-n_{\overline{p}}\right)+\left(n_n-n_{\overline{n}}\right)+\left(n_Y-n_{\overline{Y}}\right)\right]\notag\\
+&=\frac{45}{2\pi^4g^s_\ast}\sinh\left[\frac{\mu_B}{T}\right]F_N\left[1+\frac{F_Y}{F_N}\sqrt{\frac{1+e^{-\mu_B/T}\,F_Y/F_K}{1+e^{\mu_B/T}\,F_Y/F_K}}\right].
+\end{align}
+where we employ the phase-space function $F_i$ for sets of nucleon $N$, kaon $K$, and hyperon $Y$ particles defined in Ref.\,\cite{Letessier:2002gp}, Section 11.4.
+\begin{align}
+&F_N=\sum_{N_i}\,g_{N_i}W(m_{N_i}/T)\;, \quad N_i=n, p, \Delta(1232),\\
+&F_K=\sum_{K_i}\,g_{K_i}W(m_{K_i}/T)\;, \quad K_i=K^0, \overline{K^0}, K^\pm, K^\ast(892),\\
+&F_Y=\sum_{Y_i}\,g_{Y_i}W(m_{Y_i}/T)\;, \quad Y_i=\Lambda, \Sigma^0,\Sigma^\pm, \Sigma(1385),
+\end{align}
+where $g_{N_i,K_i,Y_i}$ are the degenerate factors, $W(x)=x^2K^\mathrm{B}_2(x)$ with $K^\mathrm{B}_2$ is the modified Bessel functions of integer order "$2$". The baryon-per-entropy-ratio can be obtained from present-day measurement of $\left(n_B-n_{\overline{B}}\right)/n_\gamma$, and we obtain: \cite{Yang:2021bko}:
+\begin{align}\label{BdS}
+\frac{n_B-n_{\overline{B}}}{s}= \left.\frac{n_B-n_{\overline{B}}}{s}\right|_{t_0}=(0.865\pm0.008)\times10^{-10} \;,
+\end{align}
+The value can be obtained by given $\left(n_B-n_{\overline{B}}\right)/n_\gamma= (0.609\pm0.06)\times10^{-9}$, as well as the entropy per particle for a massless boson $\sigma/n|_\mathrm{boson}\approx 3.60$ and massless fermion $\sigma/n|_\mathrm{fermion}\approx 4.20$.
 
+In Fig. \ref{Baryon_fig} we solve Eq.(\ref{Baryon_ChemicalPotential}) numerically and plot the baryon(antibaryon) number density as a function of temperature in the range $150\,\mathrm{MeV}>T>5\,\mathrm{MeV}$. The temperature where antibaryons disappear from the Universe inventory can be defined when the ratio $n_{\overline B}/(n_B-n_{\overline B})=1$. This condition is reached in an expanding Universe at $T=38.2$\,MeV(vertical black dotted line). The antibaryon disappearance temperature does not depend on the baryon and lepton number neutrality $L=B$, it only depends on the baryon-per-entropy ratio assumed to be constant during Universe evolution. The assumption of comoving baryon number conservation is justified by the wealth of particle physics experiments, and the comoving entropy conservation in an adiabatic evolving Universe is a common assumption.
+%~~~~~~~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{figure} [h]
+%\begin{center}
+\centering
+\includegraphics[width=\linewidth]{Baryon_Antibaryon_cm.jpg}
+\caption{The baryon(antibaryon) number density as a function of temperature in the range $150\,\mathrm{MeV}>T>5\,\mathrm{MeV}$. The blue solid line is the baryon density, the red solid line is the antibaryon density. The black dotted line represents $T=38.2$ MeV  when the ratio $n_{\overline B}/(n_B-n_{\overline B})=1$ which deifne the condition where $n_{\overline B} $ disappear from the Universe.}
+\label{Baryon_fig}
+%\end{center}
+\end{figure}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In \rf{hadron_content}, we present the fraction of visible radiation and matter split between the baryons, mesons, and light and leptons. For a brief period in the early Universe, the hadrons contribution to the energy density of the universe dwarfed that of radiation and leptons \cite{Rafelski:2019twp}. This circumstance would not be true again until the late universe after recombination though by that point dark matter would become the dominant form of matter in the cosmos.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
 \centering
@@ -370,20 +395,25 @@ In \rf{hadron_content}, we present the fraction of visible radiation and matter 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Cosmological Strangeness Abundance}\label{sec:Strangeness}
-\noindent In this section, we investigate the strange particle composition of the expanding early Universe in the hadronic epoch $T_h\approx 150\ge T\ge 10$\,MeV. We study strangeness yield in thermal and chemical equilibrium constrained by prescribed conserved entropy per baryon in a charge neutral and strangeness neutral $\langle s-\bar s\rangle$ Universe. Then turning to kinetic processes in a Hubble expanding Universe, and determine the
-conditions at which at decreasing temperature $T$ individual strangeness producing reactions fall out of detailed balance between decay and back-reaction strangeness production rates. For further details, see \cite{Yang:2021bko}.
+\noindent 
+After hadronization, both charm quarks and strange quarks can form heavy mesons and decay in early universe. However, unlike the charm disappears from particle inventory once the hadronization via the decay into multi-particles very fast. The strangenss can still persist in universe until $T\approx\mathcal{O}(10\mathrm{MeV})$ via the weak, electromagnetic, and strong interaction\cite{Yang:2021bko}.
 
-We illustrate our by approach considering an unstable strange particle, say $S$, decaying into two particles $S\rightarrow 1+2$. In a dense and high temperature plasma with particle $1$ and $2$ present in thermal equilibrium, the inverse reaction $1+2\rightarrow S$ produces the particle $S$. The natural decay of particles concerned provides also the intrinsic strength of the inverse, strangeness production reaction. As long as both decay and production reactions are possible, particle $S$ abundance remains in thermal equilibrium. This balance between production and decay rates is called detailed balance. 
+We illustrate our by approach considering an unstable strange particle $S$ decaying into two particles $1$ and $2$, 
+In a dense and high-temperature plasma with particle $1$ and $2$ present in thermal equilibrium, the inverse reaction can happen and produces the particle $S$. We have
+\begin{align}
+ S\Longleftrightarrow1+2
+\end{align}
+The natural decay of the particles concerned provides also the intrinsic strength of the inverse, strangeness production reaction. As long as both decay and production reactions are possible, particle $S$ abundance remains in thermal equilibrium. This balance between production and decay rates is called detailed balance. 
 
-
-When the back reactions are faster than the Universe expansion, which condition(s) we characterize in the following, we can explore the Universe composition assuming both kinetic and particle abundance equilibrium (chemical equilibrium). In Fig.~\ref{EquilibPartRatiosFig} we show the chemical equilibrium particle abundance ratios of composition of hadronic Universe. We have
+When the back reactions are faster than the Universe expansion, which condition(s) we characterize in the following, we can explore the Universe composition assuming both kinetic and particle abundance equilibrium (chemical equilibrium). In Fig.~\ref{EquilibPartRatiosFig} we show the chemical equilibrium particle abundance ratios of the composition of hadronic Universe. We have
 \begin{itemize}
 \item
-In the temperature range $20 <T <60$\,MeV the Universe is rich in physics phenomena involving strange mesons, (anti)baryons including (anti)hyperon abundances. Considering the inventory of the Universe strange mesons and baryons, the temperature where antibaryons disappear from the Universe inventory is defined when the ratio $n_{\overline B}/(n_B-n_{\overline B})=1$.This condition is reached in an expanding Universe at $T=38.2$\,MeV. 
-
-\item
+In the temperature range $20 <T <60$\,MeV the Universe is rich in physics phenomena involving strange mesons, (anti)baryons including (anti)hyperon abundances. 
 Pions $\pi(q\bar q)$ are the most abundant hadrons because of their low mass and the inverse decay reaction $\gamma\gamma\rightarrow\pi^0$, which assures chemical equilibrium~\cite{Kuznetsova:2008jt} %(brown line for $n_\pi/n_B\gg1$ in Fig.~\ref{EquilibPartRatiosFig}).
 
 \item
@@ -393,7 +423,7 @@ For temperature $150\,\mathrm{MeV}>T>20\,\mathrm{MeV}$ the Universe is meson-dom
 \begin{figure}[bt]
 %\begin{center}
 \centering
-\includegraphics[width=0.85\linewidth]{Meson_Baryon_density_ratio_C.jpg}
+\includegraphics[width=0.7\linewidth]{Meson_Baryon_density_ratio_C.jpg}
 \caption{Ratios of hadronic particle number densities as a function of temperature $150\,\mathrm{MeV}> T>10\,\mathrm{MeV}$ in the early Universe with baryon $B$ yields: pions $\pi$ (brown line), kaons $K( q\bar s)$ (blue), antibaryon $\overline B$ (black), hyperon $Y$ (red) and anti-hyperons $\overline Y$ (dashed red). Also shown $\overline K/Y$(purple).}
 \label{EquilibPartRatiosFig}
 %\end{center}
@@ -404,7 +434,7 @@ In Fig.~\ref{Strangeness_map2} we shows important source reactions for  strange 
 \begin{figure} %[h]
 %\begin{center}
 \centering
-\includegraphics[width=0.70\linewidth]{Strangeness002_newJ.jpg}
+\includegraphics[width=0.60\linewidth]{Strangeness002_newJ.jpg}
 \caption{
 The strangeness abundance of changing reactions in the primordial Universe. The red circles show strangeness carrying hadronic particles; red thick lines denote effectively instantaneous reactions. Black thick lines show relatively strong hadronic reactions.}
 \label{Strangeness_map2}
@@ -423,13 +453,13 @@ The relevant interaction rates competing with Hubble time involving strongly int
 \centering
 \includegraphics[width=0.49\linewidth]{Strangeness_Hubble_C.jpg}
 \includegraphics[width=0.49\linewidth]{NewHyperonRate_C.jpg}
-\caption{On left: hadronic relaxation reaction times in meson sector as a function of temperature $T$, are compared to Hubble time $1/H$ (black solid line). At bottom the horizontal black-dashed line is the natural (vacuum) lifespan of $\rho$. On right: thermal reaction rate $R$ per volume and time for strangeness production ,exchange and decay processes in hyperons sector as a function of temperature $150\,\mathrm{MeV}> T>10\,\mathrm{MeV}$ in the early Universe.}
+\caption{On left: hadronic relaxation reaction times in meson sector as a function of temperature $T$, are compared to Hubble time $1/H$ (black solid line). At the bottom, the horizontal black-dashed line is the natural (vacuum) lifespan of $\rho$. On right: thermal reaction rate $R$ per volume and time for strangeness production, exchange, and decay processes in hyperons sector as a function of temperature $150\,\mathrm{MeV}> T>10\,\mathrm{MeV}$ in the early Universe.}
 \label{reaction_time_tot}
 %\end{center}
 \end{figure}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-It shows that once the reactions decouple from the cosmic plasma, the corresponding detailed balance can be broken and the inverse decay reactions are acting like a "hole" in the strangeness abundance "pot”.
-The first reaction to become slower compared to Hubble time $1/H$ is the weak interaction $\mu^\pm+\nu_{\mu}\rightarrow K^\pm$ at $T_f^{K^\pm}=33.8\,\mathrm{MeV}$. This is followed by the electromagnetic process $l^-+l^+\rightarrow\phi$ at $T_f^\phi=23\sim25\,\mathrm{MeV}$. At $T_f^K=19.8\,\mathrm{MeV}$ the hadronic reaction $\pi+\pi\rightarrow K$ becomes slower than the Hubble expansion. The reactions $\gamma+\gamma\rightarrow\pi$ and $\rho+\pi\leftrightarrow\phi$ are faster compared to $1/H$. However, the $\rho\to\pi+\pi$ lifetime (black dashed line in Fig.~\ref{reaction_time_tot})(on left) is smaller than the reaction $\rho+\pi\leftrightarrow\phi$; in this case, most of $\rho$-meson decays faster, thus are absent and cannot contribute to the strangeness creation in the meson sector. Below the temperature $T<20$\,MeV, all the detail balances in the strange meson reactions are broken and the strangeness in the meson sector should disappear rapidly, were it not for the small number of baryons present in the Universe.
+It shows that once the reactions freezout from the cosmic plasma, the corresponding detailed balance is broken and the inverse decay reactions are acting like a "hole" in the strangeness abundance "pot”.
+The first freezeout reaction is the weak interaction $\mu^\pm+\nu_{\mu}\rightarrow K^\pm$ at $T_f^{K^\pm}=33.8\,\mathrm{MeV}$, and followed by the electromagnetic process $l^-+l^+\rightarrow\phi$ at $T_f^\phi=23\sim25\,\mathrm{MeV}$. At $T_f^K=19.8\,\mathrm{MeV}$ the hadronic reaction $\pi+\pi\rightarrow K$ becomes slower than the Hubble expansion. The reactions $\gamma+\gamma\rightarrow\pi$ and $\rho+\pi\leftrightarrow\phi$ are faster compared to $1/H$. However, the $\rho\to\pi+\pi$ lifetime (black dashed line in Fig.~\ref{reaction_time_tot})(on left) is faster than the reaction $\rho+\pi\leftrightarrow\phi$; Hence most of $\rho$-meson decays faster and cannot contribute to the strangeness creation in the meson sector. Below the temperature $T<20$\,MeV, all the detail balances in the strange meson reactions are broken and the strangeness in the meson sector should disappear rapidly, were it not for the small number of baryons present in the Universe.
 %~~~~~~~~~~~table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \begin{table}%[h]
 \caption{The characteristic strangeness reaction and their freezeout temperature and temperature width in early Universe.}
@@ -455,9 +485,7 @@ $\pi\pi\rightarrow\rho$ & $T_f=12.3$\,MeV&{$0.2$\,MeV}\\
 
 
 \item \textbf{Strangeness in hyperons era:}
-In order to understand strangeness in hyperons, we evaluated the reaction $\pi +N\rightarrow K+\Lambda$, the strangeness exchange reaction $\overline{K}+N\rightarrow \Lambda+\pi$, and the strangeness decay $\Lambda\rightarrow N+\pi$, in detail.The general form for thermal reaction rate per volume is discussed in~\cite{Letessier:2002gp} (Eq.(17.16), Chapter 17).
- 
- In Fig.(\ref{Lambda_Rate_volume.fig})(on right) we saw that for $T<20$\,MeV, the reactions for the hyperon $\Lambda$ production is dominated by $\overline{K}+N\leftrightarrow\Lambda+\pi$. Both strangeness and anti-strangeness disappear from the Universe via the reactions $\Lambda\rightarrow N+\pi$ and $K\to\pi+\pi$, keeping the $s=\bar s$. Beginning with $T=12.9$ MeV, the dominant reaction is $\Lambda\leftrightarrow N+\pi$, which shows that at a lower temperature we still have (very little) strangeness remnant in the $\Lambda$. In this case, the strangeness abundance becomes asymmetric and we have $s\gg\bar{s}$ in the early Universe. Hence, strange hyperons and anti hyperons could enter into dynamic nonequilibrium condition including $\langle s-\bar s\rangle \ne 0$.
+In order to understand strangeness in hyperons, we evaluated the reaction $\pi +N\rightarrow K+\Lambda$, the strangeness exchange reaction $\overline{K}+N\rightarrow \Lambda+\pi$, and the strangeness decay $\Lambda\rightarrow N+\pi$, in detail.The general form for thermal reaction rate per volume is discussed in~\cite{Letessier:2002gp} (Eq.(17.16), Chapter 17). In Fig.(\ref{reaction_time_tot})(on right) we saw that for $T<20$\,MeV, the reactions for the hyperon $\Lambda$ production is dominated by $\overline{K}+N\leftrightarrow\Lambda+\pi$. Both strangeness and anti-strangeness disappear from the Universe via the reactions $\Lambda\rightarrow N+\pi$ and $K\to\pi+\pi$, keeping the $s=\bar s$. Beginning with $T=12.9$ MeV, the dominant reaction is $\Lambda\leftrightarrow N+\pi$, which shows that at a lower temperature we still have (very little) strangeness remnant in the $\Lambda$. In this case, the strangeness abundance becomes asymmetric and we have $s\gg\bar{s}$ in the early Universe. Hence, strange hyperons and anti hyperons could enter into dynamic nonequilibrium condition including $\langle s-\bar s\rangle \ne 0$.
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\begin{figure}[h]
 %\begin{center}
@@ -475,17 +503,13 @@ The primary conclusion of the study of strangeness production and content in the
 
 \subsection{Pion Abundance in the Early Universe}\label{sec:Pions}
 \noindent 
-In early universe, the $\pi^0$ vacuum life span $\tau_{\pi^0}^0=(8.4\pm0.6)\times10^{-17} {\rm s}$ is rather short compare to the Hubble expansion rate,
-\begin{align}
-H=\sqrt{g_\ast}\frac{T^2}{M_{Pl}}=\left(0.014{\rm s}\right)^{-1}\left(\frac{T^2}{10{\rm MeV}}\right)^2
-\end{align}
-where $g_\ast$ is the number of degree of freedom contributing to the energy density and $M_{Pl}=1.22\times10^{19}$GeV is the Planck mass. In this case, one is tempted to presume that the decay process dominates and $\pi^0$ disappears in early unvierse. However, there must be a detailed balance in the thermal bath: the production process in a suitable environment must be able to form $\pi^0$ with strength corresponding to the decay process lifespan. 
+In early universe, the $\pi^0$ vacuum life span $\tau_{\pi^0}^0=(8.4\pm0.6)\times10^{-17} {\rm sec}$ is rather short compare to the Hubble expansion time $1/H=(10^{-3}\sim10^{-4})$ sec. In this case, one is tempted to presume that the decay process dominates and $\pi^0$ disappears in early Unvierse. However, there must be a detailed balance in the thermal bath: the production process in a suitable environment must be able to form $\pi^0$ with strength corresponding to the decay process lifespan. 
 
 In general, $\pi^0$ in the QED plasma is produced predominantly in the thermal two-photon fusion:
 \begin{align}
 \gamma+\gamma \rightarrow \pi^0 ,\qquad e^-+e^+ \rightarrow \pi^0. 
 \end{align}
-These formation processes are the inverse of the decay process of $\pi^0$. The smallness of the electro-formation of $\pi^0$ is characterized by the small  branching ratio in $\pi^0$ decay $B=\Gamma_{ee}/\Gamma_{\gamma\gamma}=6.2\pm 0.5 10^{-8}$.
+These formation processes are the inverse of the decay process of $\pi^0$. The smallness of the electron-formation of $\pi^0$ is characterized by the small  branching ratio in $\pi^0$ decay $B=\Gamma_{ee}/\Gamma_{\gamma\gamma}=6.2\pm 0.5\times10^{-8}$.
 For $\pi^{\pm}$ can be produced in $\pi^0\pi^0$ charge exchange scattering:
 \begin{align}
 \pi^0 + \pi^0 \rightarrow \pi^{+} + \pi^{-}, \qquad\gamma+\gamma \rightarrow \pi^{+} + \pi^{-}, \qquad
@@ -541,7 +565,7 @@ g^*T^3))/dT}{dn_{\pi}/d{\Upsilon_3}}{\dot T},\label{tauT} \quad
 \dot{T},\quad
 \tau_{\pi^0}=\frac{dn_{\pi^0}/d\Upsilon_{\pi^0}}{R_{\pi^0}} 
 \end{align}
-Where $n_{\pi^0}$ is the number density of pion and we introduced the minus sign above in order to have $\tau_T$, $\tau_S>0$. Entropy is conserved in the expanding Universe, and in the radiation dominated Universe we have $d(T^3V)/dT=0$, and hence $1/\tau_S=0$. The effect of universe expansion and dilution of number density is described by $1/\tau_T$. Comparing $\tau_T$ to the chemical relaxation time $\tau_{\pi^0}$ can provide the quantitative condition for freezeout from chemical equilibrium. In the case, of massive pion $m_{\pi}\gg T$, we have \cite{Kuznetsova:2009xh}
+Where $n_{\pi^0}$ is the number density of pion and we introduced the minus sign above in order to have $\tau_T$, $\tau_S>0$. Entropy is conserved in the expanding Universe, and in the radiation-dominated Universe we have $d(T^3V)/dT=0$, and hence $1/\tau_S=0$. The effect of universe expansion and dilution of number density is described by $1/\tau_T$. Comparing $\tau_T$ to the chemical relaxation time $\tau_{\pi^0}$ can provide the quantitative condition for freezeout from chemical equilibrium. In the case, of massive pion $m_{\pi}\gg T$, we have \cite{Kuznetsova:2009xh}
 \begin{align}
 \tau_T\approx\frac{T}{m_{\pi}H}.
 \end{align}
@@ -650,7 +674,7 @@ f_{c}(t,E)=\frac{1}{\exp(E/T)+1}, \text{ for } T(t)> T_{ch}.
 \end{equation}
 
 \item
-Kinetic freeze-out occurs at the temperature, $T_f$, when momentum exchanging interactions no longer occur rapidly enough to maintain an equilibrium momentum distribution. When $T_f<T(t)<T_{ch}$, the number changing process  no longer occurs rapidly enough to keep the distribution in chemical equilibrium but there is still sufficient momentum exchange to keep the distribution in thermal equilibrium.  The distribution function is therefore obtained by maximizing entropy, with fixed energy, particle number, and antiparticle number separately,  implying that the distribution function has the form
+Kinetic freeze-out occurs at the temperature, $T_f$, when momentum exchanging interactions no longer occur rapidly enough to maintain an equilibrium momentum distribution. When $T_f<T(t)<T_{ch}$, the number-changing process  no longer occurs rapidly enough to keep the distribution in chemical equilibrium but there is still sufficient momentum exchange to keep the distribution in thermal equilibrium.  The distribution function is therefore obtained by maximizing entropy, with fixed energy, particle number, and antiparticle number separately,  implying that the distribution function has the form
 \begin{equation}\label{kinetic_equilib}
 f_k(t,E)=\frac{1}{\Upsilon^{-1}\exp(E/T)+1}, \text{ for }T_f< T(t)< T_{ch}.
 \end{equation}
@@ -687,7 +711,7 @@ The separation of the freeze-out process into these three regimes is of course o
 \hspace{1mm}\includegraphics[width=0.47\columnwidth]{nu_mu_freezeout.eps}}
 \centerline{\includegraphics[width=0.47\columnwidth]{nu_e_freezeout_GF.eps}
 \hspace{1mm}\includegraphics[width=0.47\columnwidth]{nu_mu_freezeout_GF.eps}}
-\caption{Freeze-out temperatures for electron neutrinos (left) and $\mu$, $\tau$ neutrinos (right) for the three types of processes adapted from paper \cite{Birrell:2014uka}. Top panels as functions of $\sin^2\theta_W$ for $\eta=\eta_0$, vertical line is $\sin^2\theta_W=0.23$; bottom panels  as a function  of relative change in interaction strength $\eta/\eta_0$ obtained  for $\sin^2\theta_W=0.23$ .}\label{fig:freezeoutT}%\label{fig:Weinberg_freezeout}\label{fig:GF_freezeout}
+\caption{Freeze-out temperatures for electron neutrinos (left) and $\mu$, $\tau$ neutrinos (right) for the three types of processes adapted from paper \cite{Birrell:2014uka}. Top panels as functions of $\sin^2\theta_W$ for $\eta=\eta_0$, the vertical line is $\sin^2\theta_W=0.23$; bottom panels  as a function  of relative change in interaction strength $\eta/\eta_0$ obtained  for $\sin^2\theta_W=0.23$ .}\label{fig:freezeoutT}%\label{fig:Weinberg_freezeout}\label{fig:GF_freezeout}
  \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -703,70 +727,31 @@ The magnitude of  $\sin^2\theta_W$ is not fixed within the SM and  could be subj
  The impact of SM parameter values on neutrino freeze-out and the discussion of the implications and connections of this work to other areas of physics, namely Big Bang Nucleosynthesis and dark radiation can be found in detail in \cite{Birrell:2014uka}.
 
 
- After neutrinos freezeout, the neutrino comoving entropy is independently conserved. However, the presence of electron-positron rich plasma until $T=20\keV$ provides the reaction $\gamma\gamma\to e^-e^+\to\nu\bar{\nu}$ to occur even after netruinos decouple from the cosmic plasma. This suggest the small amount of $e^\pm$ entropy can still transfer to neutrinos until temperature $T=20\keV$ and can modify free streaming distribution and the effective number of neutrino.
+ After neutrinos freezeout, the neutrino comoving entropy is independently conserved. However, the presence of electron-positron rich plasma until $T=20\keV$ provides the reaction $\gamma\gamma\to e^-e^+\to\nu\bar{\nu}$ to occur even after neutrinos decouple from the cosmic plasma. This suggests the small amount of $e^\pm$ entropy can still transfer to neutrinos until temperature $T=20\keV$ and can modify free streaming distribution and the effective number of neutrinos.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Effective Number of Neutrinos}\label{sec:EffectiveNeutrino}
-\noindent The population of each flavor of neutrino is not a fixed quantity throughout the evolution of the Universe. In the earlier hot Universe, the population of neutrinos is controlled thermally and and to maximize entropy, each flavor is equally filled. As the expansion factor $a(t)$ is radiation dominated for much of this period (see \rf{CosmicFraction}), the CMB is ultimately sensitive to the total energy density within the neutrino sector (which is sometimes referred to as the \lq\lq dark radiation\rq\rq\ contribution). This is described by the effective number of neutrinos $N_{\nu}^{\mathrm{eff}}$ and captures the number of relativistic degrees of freedom. {\xblue (I add the paragraph here to define the $N_{eff}$) The effective number of neutrinos 
+\noindent The population of each flavor of neutrino is not a fixed quantity throughout the evolution of the Universe. In the earlier hot Universe, the population of neutrinos is controlled thermally and to maximize entropy, each flavor is equally filled. As the expansion factor $a(t)$ is radiation dominated for much of this period (see \rf{CosmicFraction}), the CMB is ultimately sensitive to the total energy density within the neutrino sector (which is sometimes referred to as the \lq\lq dark radiation\rq\rq\ contribution). This is described by the effective number of neutrinos $N_{\nu}^{\mathrm{eff}}$ and captures the number of relativistic degrees of freedom.
 \begin{align}\label{Neff}
 N_\nu^{\mathrm{eff}}\equiv\frac{\rho^{\mathrm{tot}}_\nu}{\frac{7\pi^2}{120}\left(\frac{4}{11}\right)^{4/3}T_\gamma^4}\;,
 \end{align}
-where $\rho_\nu^{\mathrm{tot}}$ is the total energy density in neutrinos and $T_\gamma$ is the photon temperature. $N_\nu^{\mathrm{eff}}$ is defined such that three neutrino flavors with zero participation of neutrinos in reheating during $e^+e^-$ annihilation results in $N_\nu^{\mathrm{eff}}=3$. The factor of $\left(4/11\right)^{1/3}$ relates the photon temperature to the (effective) temperature of the free-streaming neutrinos after $e^\pm$ annihilation, under the assumption of zero neutrino reheating.}
-Naively speaking, this number should take on the value $N_{\nu}^{\mathrm{eff}}\approx3$, which fits within the Planck result of $N_{\nu, exp}^{\mathrm{eff}}=2.99\pm0.17$ \cite{Planck:2018vyg}. This number in the $\Lambda$-CDM model is expected to deviate slightly to a value of $N_{\nu, \Lambda CDM}^{\mathrm{eff}}=3.046$ due to an overpopulation of the $\nu_{e}$ electron-neutrino flavor during BBN in the production of the light elements. We also note that this number is subject to change from a more accurate assessment of lithium and tritium production, neutrino masses, as well as neutrino production from the positron disappearance event shortly after BBN. Low energy bound-state electron-positron (positronium) decay into neutrinos is suppressed as $m_{\nu}^{2}/m_{e}^{2}$ \cite{Govaerts:1996dt,Adkins:2022omi} but may be enhanced by neutrino anomalous magnetic moment. This situation however does not describe the disappearance of the positrons which was a \lq\lq hot\rq\rq\ scattering process where the $e^{+}e^{-}\rightarrow\gamma\gamma$ amplitude outpaced the reverse $\gamma\gamma\rightarrow e^{+}e^{-}$ production process as the Universe cooled. With that in mind, the neutrino anomalous moment contribution to neutrino degrees of freedom in $e^{\pm}$ epoch should be explored. The neutrino degrees of freedom are also sensitive to the presence of sterile neutrinos which is a common feature of many BSM models. We note that the Planck result is not well constrained and thus an important place to look for deviations away from standard model results.
+where $\rho_\nu^{\mathrm{tot}}$ is the total energy density in neutrinos and $T_\gamma$ is the photon temperature. $N_\nu^{\mathrm{eff}}$ is defined such that three neutrino flavors with zero participation of neutrinos in reheating during $e^+e^-$ annihilation results in $N_\nu^{\mathrm{eff}}=3$. The factor of $\left(4/11\right)^{1/3}$ relates the photon temperature to the (effective) temperature of the free-streaming neutrinos after $e^\pm$ annihilation, under the assumption of zero neutrino reheating.
+
+Naively speaking, this number should take on the value near $N_{\nu}^{\mathrm{eff}}\approx3$, which fits within the Planck result of $N_{\nu, exp}^{\mathrm{eff}}=2.99\pm0.17$ \cite{Planck:2018vyg}. This number in the $\Lambda$-CDM model is expected to deviate slightly to a value of $N_{\nu, \Lambda CDM}^{\mathrm{eff}}=3.046$ due to an overpopulation of the $\nu_{e}$ electron-neutrino flavor during BBN in the production of the light elements. We also note that this number is subject to change from a more accurate assessment of lithium and tritium production, neutrino masses, as well as neutrino production from the positron disappearance event shortly after BBN. Low energy bound-state electron-positron (positronium) decay into neutrinos is suppressed as $m_{\nu}^{2}/m_{e}^{2}$ \cite{Govaerts:1996dt,Adkins:2022omi} but may be enhanced by neutrino anomalous magnetic moment. This situation however does not describe the disappearance of the positrons which was a \lq\lq hot\rq\rq\ scattering process where the $e^{+}e^{-}\rightarrow\gamma\gamma$ amplitude outpaced the reverse $\gamma\gamma\rightarrow e^{+}e^{-}$ production process as the Universe cooled. With that in mind, the neutrino anomalous moment contribution to neutrino degrees of freedom in $e^{\pm}$ epoch should be explored. The neutrino degrees of freedom are also sensitive to the presence of sterile neutrinos which is a common feature of many BSM models. We note that the Planck result is not well constrained and thus an important place to look for deviations away from standard model results.
 
  The explanations of the tension in $N_\mathrm{eff}$ has already inspired various theories, including the consideration of:
 \begin{itemize}
 \item Neutrino freezeout condition and $N_\nu^{\mathrm{eff}}$:\\
-A precise study of neutrino decoupling condition can provide precise predictions of $N_\nu^{\mathrm{eff}}$. A lot of study focus on improve the calculation of decoupling, including:
+A precise study of the neutrino decoupling condition can provide precise predictions of $N_\nu^{\mathrm{eff}}$. A lot of studies focus on improving the calculation of decoupling, including:
 1.)model in which the temperature of neutrino decoupling was a variable standard model of particle physics parameters \cite{Birrell:2014uka}, 2.) The entropy transfer from electron-positron annihilation and finite temperature correction at neutrino decoupling \cite{Dicus:1982bz, Heckler:1994tv, Fornengo:1997wa}, 3.) Neutrino decoupling with flavor oscillations \cite{Mangano:2005cc,Mangano:2001iu}, provide precise predictions.
 
 
 \item QGP as the possible source contribute to $N_\nu^{\mathrm{eff}}$:\\
-The natural concordance of the reported CMB range of $N_\nu^{\mathrm{eff}}$ with the range of QGP hadronization temperatures,motivates the exploration of a connection between $N_\nu^{\mathrm{eff}}$ and the decoupling of sterile particles at and below the QGP phase transition\cite{Birrell:2014cja}. It shows that $N_\nu^{\mathrm{eff}}>3.05$ can be associated with the appearance of several light particles at QGP hadronization in the early Universe that either are weakly interacting in the entire space or are allowed to interact only inside the deconfined domain, in which case their coupling would be strong. Such particles could leave a clear experimental signature in relativistic heavy ion experiments that produce the deconfined QGP phase.
+The natural concordance of the reported CMB range of $N_\nu^{\mathrm{eff}}$ with the range of QGP hadronization temperatures, motivates the exploration of a connection between $N_\nu^{\mathrm{eff}}$ and the decoupling of sterile particles at and below the QGP phase transition\cite{Birrell:2014cja}. It shows that $N_\nu^{\mathrm{eff}}>3.05$ can be associated with the appearance of several light particles at QGP hadronization in the early Universe that either is weakly interacting in the entire space or is allowed to interact only inside the deconfined domain, in which case their coupling would be strong. Such particles could leave a clear experimental signature in relativistic heavy ion experiments that produce the deconfined QGP phase.
 
 \item Connection between lepton asymmetry $L$ and $N_\nu^{\mathrm{eff}}$:\\
-In the current standard cosmological model, asymmetry between leptons and anti-leptons $L\equiv  [N_\mathrm{L}-N_{\overline{\mathrm{L}}}] /N_\gamma $  (normalized with the photon number) is in general assumed to be small (nano-scale) so that the net normalized lepton number equals the net baryon number $L=B$ where $B=[N_\mathrm{B}-N_{\overline{\mathrm{B}}}]/N_\gamma $. Barenboim, Kinney and Park~\cite{Barenboim:2016shh,Barenboim:2017dfq}  note that the lepton asymmetry of the Universe is one of the most weakly constrained parameters and propose leptogenesis scenarios able to accommodate a large lepton number asymmetry surviving up to this date. The work \cite{Yang:2018oqg}  extend their qualitative discussion of these constraints by quantifying the impact of large lepton asymmetry on Universe expansion and shows that there is another \lq natural\rq\ choice  $L\simeq 1$, making the  net lepton number and net photon number in the Universe similar. 
+In the current standard cosmological model, an asymmetry between leptons and anti-leptons $L\equiv  [N_\mathrm{L}-N_{\overline{\mathrm{L}}}] /N_\gamma $  (normalized with the photon number) is in general assumed to be small (nano-scale) so that the net normalized lepton number equals the net baryon number $L=B$ where $B=[N_\mathrm{B}-N_{\overline{\mathrm{B}}}]/N_\gamma $. Barenboim, Kinney, and Park~\cite{Barenboim:2016shh,Barenboim:2017dfq}  note that the lepton asymmetry of the Universe is one of the most weakly constrained parameters and propose leptogenesis scenarios able to accommodate a large lepton number asymmetry surviving up to this date. The work \cite{Yang:2018oqg}  extend their qualitative discussion of these constraints by quantifying the impact of large lepton asymmetry on Universe expansion and shows that there is another \lq natural\rq\ choice  $L\simeq 1$, making the  net lepton number and net photon number in the Universe similar. 
 
 \end{itemize}
-
-%After neutrinos freezout and become free-streaming in the early universe, the energy density of free-streaming density is given by Eq.(\ref{freestream_rho}). Substituting the free-streaming energy density into the definition of the effective number of neutrinos, we have the following relation:
-%\begin{align}
-%N_\nu^{\mathrm{eff}}\!\!
-%=\!3\!\left(\frac{11}{4}\right)^{\!\!\frac{4}{3}}\!\!\left(\frac{T_\nu}%{T_\gamma}\right)^{\!\!4}\!
-%\left[1\!+\!\frac{30}{7\pi^2}\!\!\left(\frac{\mu_\nu}{T_f}\right)^{\!\!2} 
-%\!\!+\frac{15}{7\pi^4}\!\!\left(\frac{\mu_\nu}{T_f}\right)^{\!\!4}\right]. 
-%\end{align}
-%In Fig.(\ref{Chemical_Potential_Neff}) (on left) we plot the free-streaming neutrino chemical potential $|\mu_\nu|/T_f$ as a function of the effective number of neutrinos $N_\nu^{\mathrm{eff}}$. It shows that the effective number of neutrinos $N_\nu^{\mathrm{eff}}=3$ is obtained under the assumption that the neutrino chemical potentials are not essential, {\it i.e.\/}, $\mu_\nu\ll T_f$. To interpret the literature values $N_\nu^{\mathrm{eff}}=3.36\pm0.34$ (CMB only) and $N_\nu^{\mathrm{eff}}= 3.62\pm0.25$ (CMB and $H_0$) we require $0.52\leqslant\mu_\nu/T_f\leqslant0.69$. These values suggest a possible lepton asymmetry between neutrino and antineutrino asymmetry at freezeoutc.
-%~Figure~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%\begin{figure}[t]
-%\begin{center}
-%\includegraphics[width=0.5\linewidth]{Chemical_Potential_Neff002}
-%\includegraphics[width=0.49\linewidth]{Ratio_BL}
-%\caption{On left: the free-streaming neutrino chemical potential $|\mu_\nu|/T_f$ as a function of the effective number of neutrinos $N_\nu^{\mathrm{eff}}$.On right: the ratio $B/|L|$ (blue solid line) between the net baryon number and the net lepton number as a function of $N^{\mathrm{eff}}_\nu$. The vertical (red) dotted lines represent the values $3.36\leqslant N_\nu^{\mathrm{eff}}\leqslant3.62$, which correspond to $1.16 \times 10^{-9}\leqslant B/|L|\leqslant 1.51 \times 10^{-9}$ (horizontal dashed lines).}
-%\label{Chemical_Potential_Neff}
-%\end{center}
-%\end{figure}
-%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-%In the current standard cosmological model, asymmetry between leptons and anti-leptons $L\equiv  [N_\mathrm{L}-N_{\overline{\mathrm{L}}}] /N_\gamma $  (normalized with the photon number) is in general assumed to be small (nano-scale) so that the net normalized lepton number equals the net baryon number $L=B$, $B=[N_\mathrm{B}-N_{\overline{\mathrm{B}}}]/N_\gamma $. Barenboim, Kinney and Park~\cite{Barenboim:2016shh,Barenboim:2017dfq}  note that the lepton asymmetry of the Universe is one of the most weakly constrained parameters and propose leptogenesis scenarios able to accommodate a large lepton number asymmetry surviving up to this date. %Our work extends \ref{Yang:2018oqg} their qualitative discussion of these constraints by quantifying the impact of large lepton asymmetry on Universe expansion and shows that there is another \lq natural\rq\ choice  $L\simeq 1$, making the  net lepton number and net photon number in the Universe  similar. 
-%Considering the lepton-density asymmetry $\ell $ at neutrino freezeout can be written as
-%\begin{align}
-%\ell_f \equiv\big(n_e-n_{\overline{e}}\big)_f+\sum_{i=e,\mu, \tau}\big(n_{\nu_i}-n_{\overline{\nu}_i}\big)_f,
-%\end{align}
-%where we use the subscript $f$ to indicate that the quantities should be evaluated at the neutrino freezeout temperature. As a first approximation, here we assume that all neutrinos freeze out at the same temperature and their chemical potentials are the same; {\it i.e.\/},
-%\begin{align}
-%\mu_\nu=\mu_{\nu_e}=\mu_{\nu_\mu}=\mu_{\nu_\tau}.
-%\end{align}
-%Furthermore neutrino oscillation implies that neutrino number is freely exchanged between flavors; {\it i.e.\/}, $\nu_e\rightleftharpoons\nu_\mu\rightleftharpoons\nu_\tau$, and we can assume that all neutrino flavors share the same population. The baryon-density asymmetry $b$ at neutrino freezeout is given by
-%\begin{align}
-%\label{B_asymmetry}
-%b_f \equiv\big(n_p-n_{\overline{p}}\big)_f+\big(n_n-n_{\overline{n}}\big)_f \approx \big(n_p+n_n\big)_f,
-%\end{align}
-%where $n_{\overline{n}}$ and $n_{\overline{p}}$ are negligible at the neutrino freezeout temperature. Taking the ratio between lepton and baryon asymmetry and introducing the entropy density, the lepton-to-baryon ratio can be written as\ref{Yang:2018oqg}
-%\begin{align}\label{L_B_ratio_final}
-%\frac{L}{B}=\frac{45}{4\pi^4}\frac{\pi^2\tilde\mu_\nu+\tilde\mu_\nu^3}{10.75+\frac{45}{4\pi^2}\tilde\mu_\nu^2}\left(\frac{s}{n_B}\right)_{\!\!t_0}\;,
-%\end{align}
-%In Fig.(\ref{Chemical_Potential_Neff}) (on right) we show the ratio $B/|L|$ as a function of the effective number of neutrino $N^{\mathrm{eff}}_\nu$. It shows that to interpret the reported values $N_\nu^{\mathrm{eff}}=3.36\pm0.34$ and $N_\nu^{\mathrm{eff}}= 3.62\pm0.25$, one needs a ratio $  1.16 \times 10^{-9}\leqslant B/|L|\leqslant 1.51 \times 10^{-9}$.It suggests that instead of $B\simeq |L|$, we found that $0.4\leqslant|L| \leqslant0.52$ and $B\simeq 1.33\times 10^{-9}|L|$ reconciles the CMB and current epoch results for the Hubble expansion parameter. 
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -775,7 +760,7 @@ The electron-positron epoch of the early Universe was home to several significan
 
 The properties of the electron-positron $e^{\pm}$ plasma in the early Universe has not received appropriate attention in an era of precision BBN studies~\cite{Pitrou:2018cgg}. The presence of $e^{\pm}$ pairs before and during BBN has been acknowledged by Wang, Bertulani and Balantekin~\cite{Wang:2010px} over a decade ago. This however was before necessary tools were developed to explore the connection between electron and neutrino plasmas~\cite{Mangano:2005cc,Birrell:2012gg,Birrell:2014uka}. 
 
-In \rf{Density_fig} we show that the dense $e^{\pm}$ plasma in early Universe under the hypothesis charge neutrality and entropy conservation as a function of temperature $2\,\mathrm{MeV}>T>10\,\mathrm{keV}$ \cite{Chris:2023abc}. The plasma is electron-positron rich, i.e, $n_{\pm}\gg n_B$ in the early Universe until leptonic annihilation at $T_{\mathrm{split}} = 20.36\ \mathrm{keV}$. For $T<T_{\mathrm{split}}$ the positron density $n_{e^+}$ decreases dramatically because of annihilation and the residual electron density becomes equal to the proton density in accordance with charge neutrality in the Universe as a whole.
+In \rf{Density_fig} we show that the dense $e^{\pm}$ plasma in the early Universe under the hypothesis charge neutrality and entropy conservation as a function of temperature $2\,\mathrm{MeV}>T>10\,\mathrm{keV}$ \cite{Chris:2023abc}. The plasma is electron-positron rich, i.e, $n_{\pm}\gg n_B$ in the early Universe until leptonic annihilation at $T_{\mathrm{split}} = 20.36\ \mathrm{keV}$. For $T<T_{\mathrm{split}}$ the positron density $n_{e^+}$ decreases dramatically because of annihilation and the residual electron density becomes equal to the proton density in accordance with charge neutrality in the Universe as a whole.
 \begin{figure}[htbp]
   \centering  \includegraphics[trim=110 50 120 40,clip,width=\textwidth]{./plots/relic_plot.PDF}
   \caption{Qualitative value of the primordial magnetic field over the evolutionary lifespan of the Universe. The upper and lower black lines represent extrapolation of the EGMF bounds into the past. The major phases of the universe are indicated with shaded regions. The values of the Schwinger critical field (purple line) and the upper bound of surface magnetar field strength (blue line) are included for scale.\label{relic_plot}}
@@ -872,11 +857,11 @@ where we now introduce the expansion scale factor via \req{BScale} - \req{Redshi
 \end{alignat}
 This reveals that only the mass contribution is dynamic over cosmological time. For any given eigen-state, the mass term increases driving the state into the non-relativistic limit while the momenta and magnetic contributions are frozen by initial conditions.
 %We note here one important difference between KGP and DP eigen-energies in the context of cosmology: The anomalous magnetic moment portion of the DP statistics is suppressed by $1/a(t)$ over cosmological time while the AMM contribution is preserved in the KGP model. That the Universe's expansion makes a distinction between $g=2$ magnetic moment and AMM for DP fermions appears as a rather artificial and nonphysical trait. While the suppression of AMM may often be small for particles such as electrons, this suppression is non-trivial for particles with large AMM values such as the proton. That cosmological redshift would push DP protons to be described by $g=2$ eign-energies in the non-relativistic limit counts as a malaise for the model and further strengthens our thinking that the KGP model is more appropriate for cosmological studies.
-Following reasoning outlined in \cite{Rafelski:2022bsv} and \cite{Steinmetz:2018ryf} we will proceed with out analysis using the eigen-energies provided by the KGP equation in favor over modeling the anomalous magnetic moment as a Pauli term added to the Dirac equation (referred to at the Dirac-Pauli equation). Motivated by \req{XScale}, we can introduce a dimensionless cosmic magnetic scale which is frozen in the homogeneous case as
+Following reasoning outlined in \cite{Rafelski:2022bsv} and \cite{Steinmetz:2018ryf} we will proceed without analysis using the eigen-energies provided by the KGP equation in favor over modeling the anomalous magnetic moment as a Pauli term added to the Dirac equation (referred to at the Dirac-Pauli equation). Motivated by \req{XScale}, we can introduce a dimensionless cosmic magnetic scale which is frozen in the homogeneous case as
 \begin{alignat}{1}
     \label{Bo} b_{0}\equiv\frac{eB}{T^{2}}=\frac{eB\hbar c^{2}}{(k_{B}T)^{2}}\ \mathrm{(S.I)}\,,
 \end{alignat}
-where we've included the expression explicitly in full SI units. We can estimate the value of $b_{0}$ from the bounds on the extra-galactic magnetic field strength and the temperature of the Universe today.  If the origin of deep space extra-galactic magnetic fields are relic fields from the early Universe, which today are expected to exist between $5\times10^{-12}\ \mathrm{T}>B_{relic}>10^{-20}\ \mathrm{T}$, then at temperature $T=2.7\ \mathrm{K}$, the value of the cosmic magnetic scale is between
+where we've included the expression explicitly in full SI units. We can estimate the value of $b_{0}$ from the bounds of the extra-galactic magnetic field strength and the temperature of the Universe today.  If the origin of deep space extra-galactic magnetic fields are relic fields from the early Universe, which today are expected to exist between $5\times10^{-12}\ \mathrm{T}>B_{relic}>10^{-20}\ \mathrm{T}$, then at temperature $T=2.7\ \mathrm{K}$, the value of the cosmic magnetic scale is between
 \begin{alignat}{1}
     \label{BoScale} 5.5\times10^{-5}>b_{0}>1.1\times10^{-11}\,.
 \end{alignat}
@@ -928,7 +913,7 @@ Assuming the error remainder $R$ is small and can be neglected, we can rewrite \
 \req{lnZ} is a surprisingly compact expression containing only tractable functions and will be our working model for the remainder of the work. Note that the above does not take into consideration density inhomogeneities and is restricted to the domain where the plasma is well described as a Maxwell-Boltzmann distribution. With that said, we have not taken the non-relativistic expansion of the eigen-energies.
 
 \subsection{Charge neutrality and chemical potential}
- In this section we are interested in exploring the chemical potential of dense $e\bar e$ plasma in early Universe under the hypothesis charge neutrality and entropy conservation. We focus on the temperature interval at post-BBN temperature range $20<T<50$keV. In this case, the charge neutrality can be written as
+ In this section, we are interested in exploring the chemical potential of dense $e\bar e$ plasma in the early Universe under the hypothesis of charge neutrality and entropy conservation. We focus on the temperature interval at the post-BBN temperature range $20<T<50$keV. In this case, the charge neutrality can be written as
 \begin{align}
   \label{density_proton}
   \left(n_{e}-n_{\bar{e}}\right)=(n_{p})=\left(\frac{n_{p}}{n_{B}}\right)\,\left(\frac{n_{B}}{s_{\gamma,\nu,e}}\right)\,s_{\gamma,\nu,e}= X_p\left(\frac{n_B}{s_{\gamma,\nu}}\right)\,s_{\gamma,\nu},\qquad X_p=\frac{n_p}{n_B}
@@ -1028,6 +1013,7 @@ Using the magnetic field $b_0$ and proton density $n_p/T^3$ we solve the magneti
 \section{Summary}\label{Summary}
 \subsection{Primordial Plasma Outlook}
 \subsection{Application to Novel Stars}
+\noindent The topics explored in this work have applications beyond early Universe cosmology. Our understanding of the QGP Epoch informs the fireballs created in heavy-ion collisions performed today and vice versa \cite{Rafelski:2013qeu,Philipsen:2012nu,Braun-Munzinger:2008szb} as one example. The $e^{\pm}$ epoch likewise because of its abundance of positrons may be useful in understanding extreme systems like those which produce gamma-ray bursts (GRB).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1080,13 +1066,15 @@ doi:10.1063/1.2943471
 [arXiv:0804.2807 [astro-ph]].
 %2 citations counted in INSPIRE as of 13 Apr 2023
 
+
 %\cite{Ruffini:2003yt}
 \bibitem{Ruffini:2003yt}
 R.~Ruffini, L.~Vitagliano and S.~S.~Xue,
-``Electron-positron-photon plasma around a collapsing star,''
+%``Electron-positron-photon plasma around a collapsing star,''
 doi:10.1142/9789812702333\_0030
 [arXiv:astro-ph/0304306 [astro-ph]].
-%7 citations counted in INSPIRE as of 13 Apr 2023
+%7 citations counted in INSPIRE as of 14 Apr 2023
+% Add journal name, not just on arxiv.
 
 %\cite{Belvedere:2012uc}
 \bibitem{Belvedere:2012uc}
@@ -1109,7 +1097,7 @@ Astron. Astrophys. \textbf{359} (2000), 855
 %\cite{Bernstein:1988bw}
 \bibitem{Bernstein:1988bw}
 J.~Bernstein,
-``KINETIC THEORY IN THE EXPANDING UNIVERSE,''
+``Kinetic theory in the expanding universe,''
 Cambridge University Press, 1988,
 ISBN 978-0-511-56418-5
 doi:10.1017/CBO9780511564185
@@ -1131,6 +1119,15 @@ Prog. Part. Nucl. Phys. \textbf{70}, 55-107 (2013)
 doi:10.1016/j.ppnp.2012.09.003
 [arXiv:1207.5999 [hep-lat]].
 %206 citations counted in INSPIRE as of 13 Apr 2023
+
+%\cite{Braun-Munzinger:2008szb}
+\bibitem{Braun-Munzinger:2008szb}
+P.~Braun-Munzinger and J.~Wambach,
+%``The Phase Diagram of Strongly-Interacting Matter,''
+Rev. Mod. Phys. \textbf{81}, 1031-1050 (2009)
+doi:10.1103/RevModPhys.81.1031
+[arXiv:0801.4256 [hep-ph]].
+%282 citations counted in INSPIRE as of 14 Apr 2023
 
 %\cite{Rafelski:1982ii}
 \bibitem{Rafelski:1982ii}
@@ -1155,6 +1152,24 @@ A.~S.~Kronfeld,
 doi:10.1142/9789814425810\_0018
 [arXiv:1209.3468 [physics.hist-ph]].
 %17 citations counted in INSPIRE as of 13 Apr 2023
+
+%\cite{Roberts:2022rxm}
+\bibitem{Roberts:2022rxm}
+C.~D.~Roberts,
+``Origin of the Proton Mass,''
+EPJ Web Conf. \textbf{282}, 01006 (2023)
+doi:10.1051/epjconf/202328201006
+[arXiv:2211.09905 [hep-ph]].
+%7 citations counted in INSPIRE as of 14 Apr 2023
+
+%\cite{Roberts:2021xnz}
+\bibitem{Roberts:2021xnz}
+C.~D.~Roberts,
+``On Mass and Matter,''
+AAPPS Bull. \textbf{31}, 6 (2021)
+doi:10.1007/s43673-021-00005-4
+[arXiv:2101.08340 [hep-ph]].
+%35 citations counted in INSPIRE as of 14 Apr 2023
 
 %\cite{Hagedorn:1984hz}
 \bibitem{Hagedorn:1984hz}
@@ -1868,12 +1883,6 @@ ISBN: 9780521018234 (Paperback), 9780521385367 (Hardback), 9780511037276 (Online
 I.~Kuznetsova,
 ``Particle Production in Matter at Extreme Conditions,''
 [arXiv:0909.0524 [hep-th]].
-
-\bibitem{Dicus:1982bz}
-D.~A.~Dicus, E.~W.~Kolb, A.~M.~Gleeson, E.~C.~G.~Sudarshan, V.~L.~Teplitz and M.~S.~Turner,
-``Primordial Nucleosynthesis Including Radiative, Coulomb, and Finite Temperature Corrections to Weak Rates,''
-Phys. Rev. D \textbf{26}, 2694 (1982)
-doi:10.1103/PhysRevD.26.2694
 
 \bibitem{Heckler:1994tv}
 A.~F.~Heckler,
