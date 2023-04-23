@@ -728,10 +728,10 @@ FUNCTION {format.eprint}
 {eprint empty$
 	{ ""}
 	{primaryClass empty$
-		{" \href{http://xxx.lanl.gov/abs/" eprint * "}" *  "{{\normalfont " * "[" * eprint * "]" * "}}" *}
+		{" \href{https://arxiv.org/abs/" eprint * "}" *  "{{\normalfont " * "[" * eprint * "]" * "}}" *}
 		{archivePrefix empty$
-              		  {" \href{http://xxx.lanl.gov/abs/" eprint * "}" * "{{\normalfont " * "[" * "arXiv:" * primaryClass * "/" * eprint * "]" * "}}" *}
-			  {" \href{http://xxx.lanl.gov/abs/" eprint * "}" * "{{\normalfont " * "[" * archivePrefix * ":" * primaryClass * "/" * eprint * "]" * "}}" *}
+              		  {" \href{https://arxiv.org/abs/" eprint * "}" * "{{\normalfont " * "[" * "arXiv:" * primaryClass * "/" * eprint * "]" * "}}" *}
+			  {" \href{https://arxiv.org/abs/" eprint * "}" * "{{\normalfont " * "[" * archivePrefix * ":" * primaryClass * "/" * eprint * "]" * "}}" *}
 		if$
 		}
 	if$
