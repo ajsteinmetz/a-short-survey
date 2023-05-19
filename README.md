@@ -7,8 +7,17 @@ In celebration of Professor Remo Ruffini's birthday, his contributions to astrop
 ## authors
 Johann Rafelski, Jeremiah Birrell, Andrew Steinmetz, and Cheng Tao Yang
 
-## arXiv
-https://arxiv.org/abs/2305.09055
+## doi/arXiv id
+- https://doi.org/10.48550/arXiv.2305.09055
+- https://arxiv.org/abs/2305.09055
 
-## doi
-https://doi.org/10.48550/arXiv.2305.09055
+## license
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
