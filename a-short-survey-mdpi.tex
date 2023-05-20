@@ -685,21 +685,26 @@ Neutrino masses can be written in terms of an effective theory where the mass te
 \begin{alignat}{1}
 	\label{Majorana} \mathcal{L}_{m}^{Maj.} = -\frac{1}{2}\bar{\nu}^{\alpha}_{L}M^{M}_{\alpha\beta}(\nu^{\beta}_{L})^{c}+\mathrm{h.c.}\,,
 \end{alignat}
-where $\nu^{c} = \hat{C}(\bar{\nu})^{T}$ is the charge conjugate of the neutrino field. The operator $\hat{C} = i\gamma^{2}\gamma^{0}$ is the charge conjugation operator. {\xblue An interesting consequence of neutrinos being Majorana particles is that they would be their own antiparticles like photons allowing for violations of total lepton number. Neutrinoless double beta decay is an important, yet undetected, evidence for Majorana nature of neutrinos~\cite{Dolinski:2019nrj}.} A third option is to consider neutrinos with both Dirac and Majorana mass Lagrangians. If the masses are generated at some high scale, the See-Saw mechanism~\cite{Arkani-Hamed:1998wuz,Ellis:1999my,Casas:2001sr} ensures that the degrees of freedom separate into heavy neutrinos and light nearly massless Majorana neutrinos. The See-Saw mechanism then provides an explanation for the smallness of the neutrino masses as has been experimentally observed.
+where $\nu^{c} = \hat{C}(\bar{\nu})^{T}$ is the charge conjugate of the neutrino field. The operator $\hat{C} = i\gamma^{2}\gamma^{0}$ is the charge conjugation operator. {\xblue An interesting consequence of neutrinos being Majorana particles is that they would be their own antiparticles like photons allowing for violations of total lepton number. Neutrinoless double beta decay is an important, yet undetected, evidence for Majorana nature of neutrinos~\cite{Dolinski:2019nrj}.} Majorana neutrinos with small masses can be generated from some high scale via the See-Saw mechanism~\cite{Arkani-Hamed:1998wuz,Ellis:1999my,Casas:2001sr} which ensures that the degrees of freedom separate into heavy neutrinos and light nearly massless Majorana neutrinos. The See-Saw mechanism then provides an explanation for the smallness of the neutrino masses as has been experimentally observed.
 
 
 A flavor eigenstate $\nu^{\alpha}$ can be described as a superposition of mass eigenstates $\nu^{k}$ with coefficients given by the Pontecorvo–Maki–Nakagawa–Sakata (PMNS) mixing matrix~\cite{King:2013eh,FernandezMartinez:2016lgt} which are both in general  complex and unitary. This is given by
 \begin{align}\label{NuFlavors}
 	\nu^{\alpha}=\sum_k^nU^\ast_{\alpha k}\nu^{k}, \qquad\alpha=e,\mu,\tau,\qquad k=1,2,3,\dots,n
 \end{align}
-where $U$ is the PMNS mixing matrix. The PMNS matrix is the lepton equivalent to the CKM mixing matrix which describes the misalignment between the quark flavors and their masses. The parameter $\delta$ is the CP-violating phase~\cite{Pascoli:2006ci} which is present when the number of generations is $n\geq3$. In principle, the number of mass eigenstates can exceed three, but is restricted to three generations in most models. By standard convention~\cite{schwartz2014quantum} found in the literature we parameterize the rotation matrix $U$ as
+where $U$ is the PMNS mixing matrix. The PMNS matrix is the lepton equivalent to the CKM mixing matrix which describes the misalignment between the quark flavors and their masses. For Majorana neutrinos, there can be up to three complex phases $(\delta,\rho,\gamma)$ which are CP-violating~\cite{Pascoli:2006ci} which are present when the number of generations is $n\geq3$. For Dirac-like neutrinos, only the $\delta$ complex phase is required. In principle, the number of mass eigenstates can exceed three, but is restricted to three generations in most models. By standard convention~\cite{schwartz2014quantum} found in the literature we parameterize the rotation matrix $U$ as
 	\begin{alignat}{1}
  	\label{PMNS} U =
 		\begin{pmatrix}
 			c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\\
 			-s_{12}c_{23} - c_{12}s_{13}s_{23}e^{i\delta} & c_{12}c_{23} - s_{12}s_{13}s_{23}e^{i\delta} & c_{13}s_{23}\\
 			s_{12}s_{23} - c_{12}s_{13}c_{23}e^{i\delta}& -c_{12}s_{23} - s_{12}s_{13}c_{23}e^{i\delta} & c_{13}c_{23}
-		\end{pmatrix}\,,
+		\end{pmatrix}\times
+        \begin{pmatrix}
+            1 & &\\
+            & e^{i\rho} &\\
+            & & e^{i\gamma}
+        \end{pmatrix}\,,
 	\end{alignat}
 where $c_{ij} = \mathrm{cos}(\theta_{ij})$ and $s_{ij} = \mathrm{sin}(\theta_{ij})$. In this convention, the three mixing angles $(\theta_{12}, \theta_{13}, \theta_{23})$, are understood to be the Euler angles for generalized rotations.
 

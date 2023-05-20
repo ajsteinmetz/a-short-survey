@@ -130,6 +130,15 @@ Sakharov, A.D.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1070/PU1991v034n05ABEH002504}{\detokenize{10.1070/PU1991v034n05ABEH002504}}}.
 
+\bibitem[Cohen \em{et~al.}(1998)Cohen, De~Rujula, and Glashow]{Cohen:1997ac}
+Cohen, A.G.; De~Rujula, A.; Glashow, S.L.
+\newblock {A Matter - antimatter universe?}
+\newblock {\em Astrophys. J.} {\bf 1998}, {\em 495},~539--549,
+  \href{https://arxiv.org/abs/astro-ph/9707087}{{\normalfont
+  [astro-ph/9707087]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1086/305328}{\detokenize{10.1086/305328}}}.
+
 \bibitem[Khlopov \em{et~al.}(2000)Khlopov, Rubin, and Sakharov]{Khlopov:2000as}
 Khlopov, M.Y.; Rubin, S.G.; Sakharov, A.S.
 \newblock {Possible origin of antimatter regions in the baryon dominated
@@ -149,14 +158,19 @@ Blinnikov, S.I.; Dolgov, A.D.; Postnov, K.A.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/PhysRevD.92.023516}{\detokenize{10.1103/PhysRevD.92.023516}}}.
 
-\bibitem[Cohen \em{et~al.}(1998)Cohen, De~Rujula, and Glashow]{Cohen:1997ac}
-Cohen, A.G.; De~Rujula, A.; Glashow, S.L.
-\newblock {A Matter - antimatter universe?}
-\newblock {\em Astrophys. J.} {\bf 1998}, {\em 495},~539--549,
-  \href{https://arxiv.org/abs/astro-ph/9707087}{{\normalfont
-  [astro-ph/9707087]}}.
+\bibitem[Khlopov and Lecian(2023)]{Khlopov:2023dbg}
+Khlopov, M.Y.; Lecian, O.M.
+\newblock {The Formalism of Milky-Way Antimatter-Domains Evolution}.
+\newblock {\em Galaxies} {\bf 2023}, {\em 11},~50.
 \newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1086/305328}{\detokenize{10.1086/305328}}}.
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/galaxies11020050}{\detokenize{10.3390/galaxies11020050}}}.
+
+\bibitem[Affleck and Dine(1985)]{Affleck:1984fy}
+Affleck, I.; Dine, M.
+\newblock {A New Mechanism for Baryogenesis}.
+\newblock {\em Nucl. Phys. B} {\bf 1985}, {\em 249},~361--380.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/0550-3213(85)90021-5}{\detokenize{10.1016/0550-3213(85)90021-5}}}.
 
 \bibitem[Rubakov and Shaposhnikov(1996)]{Rubakov:1996vz}
 Rubakov, V.A.; Shaposhnikov, M.E.
@@ -166,20 +180,6 @@ Rubakov, V.A.; Shaposhnikov, M.E.
   \href{https://arxiv.org/abs/hep-ph/9603208}{{\normalfont [hep-ph/9603208]}}.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1070/PU1996v039n05ABEH000145}{\detokenize{10.1070/PU1996v039n05ABEH000145}}}.
-
-\bibitem[Affleck and Dine(1985)]{Affleck:1984fy}
-Affleck, I.; Dine, M.
-\newblock {A New Mechanism for Baryogenesis}.
-\newblock {\em Nucl. Phys. B} {\bf 1985}, {\em 249},~361--380.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/0550-3213(85)90021-5}{\detokenize{10.1016/0550-3213(85)90021-5}}}.
-
-\bibitem[Khlopov and Lecian(2023)]{Khlopov:2023dbg}
-Khlopov, M.Y.; Lecian, O.M.
-\newblock {The Formalism of Milky-Way Antimatter-Domains Evolution}.
-\newblock {\em Galaxies} {\bf 2023}, {\em 11},~50.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/galaxies11020050}{\detokenize{10.3390/galaxies11020050}}}.
 
 \bibitem[Letessier and Rafelski(2008)]{Letessier:2005qe}
 Letessier, J.; Rafelski, J.
@@ -592,6 +592,13 @@ Hagedorn, R.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/978-3-319-17545-4_25}{\detokenize{10.1007/978-3-319-17545-4_25}}}.
 
+\bibitem[Fromerth and Rafelski(2003)]{Fromerth:2002dv}
+Fromerth, M.J.; Rafelski, J.
+\newblock {Limit on CPT violating quark anti-quark mass difference from the
+  neutral kaon system}.
+\newblock {\em Acta Phys. Polon. B} {\bf 2003}, {\em 34},~4151--4156,
+  \href{https://arxiv.org/abs/hep-ph/0211362}{{\normalfont [hep-ph/0211362]}}.
+
 \bibitem[Tanabashi \em{et~al.}(2018)Tanabashi
   et~al.]{ParticleDataGroup:2018ovx}
 Tanabashi, M.; others.
@@ -639,15 +646,6 @@ Kuznetsova, I.
 \newblock Master's thesis, {The University of Arizona},  2009,
   \href{https://arxiv.org/abs/0909.0524}{{\normalfont
   [arXiv:hep-th/0909.0524]}}.
-
-\bibitem[Coleman and Roos(2003)]{Coleman:2003hs}
-Coleman, T.S.; Roos, M.
-\newblock {Effective degrees of freedom during the radiation era}.
-\newblock {\em Phys. Rev. D} {\bf 2003}, {\em 68},~027702,
-  \href{https://arxiv.org/abs/astro-ph/0304281}{{\normalfont
-  [astro-ph/0304281]}}.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/PhysRevD.68.027702}{\detokenize{10.1103/PhysRevD.68.027702}}}.
 
 \bibitem[Kopp \em{et~al.}(2011)Kopp, Maltoni, and Schwetz]{Kopp:2011qd}
 Kopp, J.; Maltoni, M.; Schwetz, T.
@@ -743,6 +741,72 @@ Fogli, G.L.; Lisi, E.; Marrone, A.; Palazzo, A.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.ppnp.2005.08.002}{\detokenize{10.1016/j.ppnp.2005.08.002}}}.
 
+\bibitem[Giunti and Studenikin(2015)]{Giunti:2014ixa}
+Giunti, C.; Studenikin, A.
+\newblock {Neutrino electromagnetic interactions: a window to new physics}.
+\newblock {\em Rev. Mod. Phys.} {\bf 2015}, {\em 87},~531,
+  \href{https://arxiv.org/abs/1403.6344}{{\normalfont
+  [arXiv:hep-ph/1403.6344]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/RevModPhys.87.531}{\detokenize{10.1103/RevModPhys.87.531}}}.
+
+\bibitem[Fritzsch and Xing(2000)]{Fritzsch:1999ee}
+Fritzsch, H.; Xing, Z.z.
+\newblock {Mass and flavor mixing schemes of quarks and leptons}.
+\newblock {\em Prog. Part. Nucl. Phys.} {\bf 2000}, {\em 45},~1--81,
+  \href{https://arxiv.org/abs/hep-ph/9912358}{{\normalfont [hep-ph/9912358]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0146-6410(00)00102-2}{\detokenize{10.1016/S0146-6410(00)00102-2}}}.
+
+\bibitem[Giunti and Kim(2007)]{giunti2007fundamentals}
+Giunti, C.; Kim, C.W.
+\newblock {\em Fundamentals of neutrino physics and astrophysics}; Oxford
+  university press,  2007.
+
+\bibitem[Fritzsch(2015)]{Fritzsch:2015gxa}
+Fritzsch, H.
+\newblock {Neutrino Masses and Flavor Mixing}.
+\newblock {\em Mod. Phys. Lett. A} {\bf 2015}, {\em 30},~1530012,
+  \href{https://arxiv.org/abs/1503.01857}{{\normalfont
+  [arXiv:hep-ph/1503.01857]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1142/S0217732315300128}{\detokenize{10.1142/S0217732315300128}}}.
+
+\bibitem[Dolinski \em{et~al.}(2019)Dolinski, Poon, and
+  Rodejohann]{Dolinski:2019nrj}
+Dolinski, M.J.; Poon, A.W.P.; Rodejohann, W.
+\newblock {Neutrinoless Double-Beta Decay: Status and Prospects}.
+\newblock {\em Ann. Rev. Nucl. Part. Sci.} {\bf 2019}, {\em 69},~219--251,
+  \href{https://arxiv.org/abs/1902.04097}{{\normalfont
+  [arXiv:nucl-ex/1902.04097]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1146/annurev-nucl-101918-023407}{\detokenize{10.1146/annurev-nucl-101918-023407}}}.
+
+\bibitem[Arkani-Hamed \em{et~al.}(2001)Arkani-Hamed, Dimopoulos, Dvali, and
+  March-Russell]{Arkani-Hamed:1998wuz}
+Arkani-Hamed, N.; Dimopoulos, S.; Dvali, G.R.; March-Russell, J.
+\newblock {Neutrino masses from large extra dimensions}.
+\newblock {\em Phys. Rev. D} {\bf 2001}, {\em 65},~024032,
+  \href{https://arxiv.org/abs/hep-ph/9811448}{{\normalfont [hep-ph/9811448]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/PhysRevD.65.024032}{\detokenize{10.1103/PhysRevD.65.024032}}}.
+
+\bibitem[Ellis and Lola(1999)]{Ellis:1999my}
+Ellis, J.R.; Lola, S.
+\newblock {Can neutrinos be degenerate in mass?}
+\newblock {\em Phys. Lett. B} {\bf 1999}, {\em 458},~310--321,
+  \href{https://arxiv.org/abs/hep-ph/9904279}{{\normalfont [hep-ph/9904279]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0370-2693(99)00545-6}{\detokenize{10.1016/S0370-2693(99)00545-6}}}.
+
+\bibitem[Casas and Ibarra(2001)]{Casas:2001sr}
+Casas, J.A.; Ibarra, A.
+\newblock {Oscillating neutrinos and $\mu \to e, \gamma$}.
+\newblock {\em Nucl. Phys. B} {\bf 2001}, {\em 618},~171--204,
+  \href{https://arxiv.org/abs/hep-ph/0103065}{{\normalfont [hep-ph/0103065]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0550-3213(01)00475-8}{\detokenize{10.1016/S0550-3213(01)00475-8}}}.
+
 \bibitem[King and Luhn(2013)]{King:2013eh}
 King, S.F.; Luhn, C.
 \newblock {Neutrino Mass and Mixing with Discrete Symmetry}.
@@ -775,61 +839,50 @@ Schwartz, M.D.
 \newblock {\em Quantum field theory and the standard model}; Cambridge
   university press,  2014.
 
-\bibitem[Giunti and Studenikin(2015)]{Giunti:2014ixa}
-Giunti, C.; Studenikin, A.
-\newblock {Neutrino electromagnetic interactions: a window to new physics}.
-\newblock {\em Rev. Mod. Phys.} {\bf 2015}, {\em 87},~531,
-  \href{https://arxiv.org/abs/1403.6344}{{\normalfont
-  [arXiv:hep-ph/1403.6344]}}.
+\bibitem[Workman \em{et~al.}(2022)Workman et~al.]{ParticleDataGroup:2022pth}
+Workman, R.L.; others.
+\newblock {Review of Particle Physics}.
+\newblock {\em PTEP} {\bf 2022}, {\em 2022},~083C01.
 \newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/RevModPhys.87.531}{\detokenize{10.1103/RevModPhys.87.531}}}.
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1093/ptep/ptac097}{\detokenize{10.1093/ptep/ptac097}}}.
 
-\bibitem[Fritzsch and Xing(2000)]{Fritzsch:1999ee}
-Fritzsch, H.; Xing, Z.z.
-\newblock {Mass and flavor mixing schemes of quarks and leptons}.
-\newblock {\em Prog. Part. Nucl. Phys.} {\bf 2000}, {\em 45},~1--81,
-  \href{https://arxiv.org/abs/hep-ph/9912358}{{\normalfont [hep-ph/9912358]}}.
+\bibitem[Avignone \em{et~al.}(2008)Avignone, Elliott, and
+  Engel]{Avignone:2007fu}
+Avignone, III, F.T.; Elliott, S.R.; Engel, J.
+\newblock {Double Beta Decay, Majorana Neutrinos, and Neutrino Mass}.
+\newblock {\em Rev. Mod. Phys.} {\bf 2008}, {\em 80},~481--516,
+  \href{https://arxiv.org/abs/0708.1033}{{\normalfont
+  [arXiv:nucl-ex/0708.1033]}}.
 \newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0146-6410(00)00102-2}{\detokenize{10.1016/S0146-6410(00)00102-2}}}.
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/RevModPhys.80.481}{\detokenize{10.1103/RevModPhys.80.481}}}.
 
-\bibitem[Giunti and Kim(2007)]{giunti2007fundamentals}
-Giunti, C.; Kim, C.W.
-\newblock {\em Fundamentals of neutrino physics and astrophysics}; Oxford
-  university press,  2007.
-
-\bibitem[Fritzsch(2015)]{Fritzsch:2015gxa}
-Fritzsch, H.
-\newblock {Neutrino Masses and Flavor Mixing}.
-\newblock {\em Mod. Phys. Lett. A} {\bf 2015}, {\em 30},~1530012,
-  \href{https://arxiv.org/abs/1503.01857}{{\normalfont
-  [arXiv:hep-ph/1503.01857]}}.
+\bibitem[Esteban \em{et~al.}(2020)Esteban, Gonzalez-Garcia, Maltoni, Schwetz,
+  and Zhou]{Esteban:2020cvm}
+Esteban, I.; Gonzalez-Garcia, M.C.; Maltoni, M.; Schwetz, T.; Zhou, A.
+\newblock {The fate of hints: updated global analysis of three-flavor neutrino
+  oscillations}.
+\newblock {\em JHEP} {\bf 2020}, {\em 09},~178,
+  \href{https://arxiv.org/abs/2007.14792}{{\normalfont
+  [arXiv:hep-ph/2007.14792]}}.
 \newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1142/S0217732315300128}{\detokenize{10.1142/S0217732315300128}}}.
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/JHEP09(2020)178}{\detokenize{10.1007/JHEP09(2020)178}}}.
 
-\bibitem[Arkani-Hamed \em{et~al.}(2001)Arkani-Hamed, Dimopoulos, Dvali, and
-  March-Russell]{Arkani-Hamed:1998wuz}
-Arkani-Hamed, N.; Dimopoulos, S.; Dvali, G.R.; March-Russell, J.
-\newblock {Neutrino masses from large extra dimensions}.
-\newblock {\em Phys. Rev. D} {\bf 2001}, {\em 65},~024032,
-  \href{https://arxiv.org/abs/hep-ph/9811448}{{\normalfont [hep-ph/9811448]}}.
+\bibitem[Alvarez-Ruso \em{et~al.}(2018)Alvarez-Ruso et~al.]{NuSTEC:2017hzk}
+Alvarez-Ruso, L.; others.
+\newblock {NuSTEC White Paper: Status and challenges of
+  neutrino\textendash{}nucleus scattering}.
+\newblock {\em Prog. Part. Nucl. Phys.} {\bf 2018}, {\em 100},~1--68,
+  \href{https://arxiv.org/abs/1706.03621}{{\normalfont
+  [arXiv:hep-ph/1706.03621]}}.
 \newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/PhysRevD.65.024032}{\detokenize{10.1103/PhysRevD.65.024032}}}.
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.ppnp.2018.01.006}{\detokenize{10.1016/j.ppnp.2018.01.006}}}.
 
-\bibitem[Ellis and Lola(1999)]{Ellis:1999my}
-Ellis, J.R.; Lola, S.
-\newblock {Can neutrinos be degenerate in mass?}
-\newblock {\em Phys. Lett. B} {\bf 1999}, {\em 458},~310--321,
-  \href{https://arxiv.org/abs/hep-ph/9904279}{{\normalfont [hep-ph/9904279]}}.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0370-2693(99)00545-6}{\detokenize{10.1016/S0370-2693(99)00545-6}}}.
-
-\bibitem[Casas and Ibarra(2001)]{Casas:2001sr}
-Casas, J.A.; Ibarra, A.
-\newblock {Oscillating neutrinos and $\mu \to e, \gamma$}.
-\newblock {\em Nucl. Phys. B} {\bf 2001}, {\em 618},~171--204,
-  \href{https://arxiv.org/abs/hep-ph/0103065}{{\normalfont [hep-ph/0103065]}}.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0550-3213(01)00475-8}{\detokenize{10.1016/S0550-3213(01)00475-8}}}.
+\bibitem[Abi \em{et~al.}(2020)Abi et~al.]{DUNE:2020ypp}
+Abi, B.; others.
+\newblock {Deep Underground Neutrino Experiment (DUNE), Far Detector Technical
+  Design Report, Volume II: DUNE Physics},
+  \href{https://arxiv.org/abs/2002.03005}{{\normalfont
+  [arXiv:hep-ex/2002.03005]}}.
 
 \bibitem[Morgan(1981)]{Morgan:1981zy}
 Morgan, J.A.
@@ -880,51 +933,6 @@ Canas, B.C.; Miranda, O.G.; Parada, A.; Tortola, M.; Valle, J.W.F.
   [arXiv:hep-ph/1510.01684]}}.
 \newblock [Addendum: Phys.Lett.B 757, 568--568 (2016)],
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.physletb.2015.12.011}{\detokenize{10.1016/j.physletb.2015.12.011}}}.
-
-\bibitem[Workman \em{et~al.}(2022)Workman et~al.]{ParticleDataGroup:2022pth}
-Workman, R.L.; others.
-\newblock {Review of Particle Physics}.
-\newblock {\em PTEP} {\bf 2022}, {\em 2022},~083C01.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1093/ptep/ptac097}{\detokenize{10.1093/ptep/ptac097}}}.
-
-\bibitem[Avignone \em{et~al.}(2008)Avignone, Elliott, and
-  Engel]{Avignone:2007fu}
-Avignone, III, F.T.; Elliott, S.R.; Engel, J.
-\newblock {Double Beta Decay, Majorana Neutrinos, and Neutrino Mass}.
-\newblock {\em Rev. Mod. Phys.} {\bf 2008}, {\em 80},~481--516,
-  \href{https://arxiv.org/abs/0708.1033}{{\normalfont
-  [arXiv:nucl-ex/0708.1033]}}.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/RevModPhys.80.481}{\detokenize{10.1103/RevModPhys.80.481}}}.
-
-\bibitem[Esteban \em{et~al.}(2020)Esteban, Gonzalez-Garcia, Maltoni, Schwetz,
-  and Zhou]{Esteban:2020cvm}
-Esteban, I.; Gonzalez-Garcia, M.C.; Maltoni, M.; Schwetz, T.; Zhou, A.
-\newblock {The fate of hints: updated global analysis of three-flavor neutrino
-  oscillations}.
-\newblock {\em JHEP} {\bf 2020}, {\em 09},~178,
-  \href{https://arxiv.org/abs/2007.14792}{{\normalfont
-  [arXiv:hep-ph/2007.14792]}}.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/JHEP09(2020)178}{\detokenize{10.1007/JHEP09(2020)178}}}.
-
-\bibitem[Alvarez-Ruso \em{et~al.}(2018)Alvarez-Ruso et~al.]{NuSTEC:2017hzk}
-Alvarez-Ruso, L.; others.
-\newblock {NuSTEC White Paper: Status and challenges of
-  neutrino\textendash{}nucleus scattering}.
-\newblock {\em Prog. Part. Nucl. Phys.} {\bf 2018}, {\em 100},~1--68,
-  \href{https://arxiv.org/abs/1706.03621}{{\normalfont
-  [arXiv:hep-ph/1706.03621]}}.
-\newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/j.ppnp.2018.01.006}{\detokenize{10.1016/j.ppnp.2018.01.006}}}.
-
-\bibitem[Abi \em{et~al.}(2020)Abi et~al.]{DUNE:2020ypp}
-Abi, B.; others.
-\newblock {Deep Underground Neutrino Experiment (DUNE), Far Detector Technical
-  Design Report, Volume II: DUNE Physics},
-  \href{https://arxiv.org/abs/2002.03005}{{\normalfont
-  [arXiv:hep-ex/2002.03005]}}.
 
 \bibitem[Choquet-Bruhat(2008)]{choquet2008general}
 Choquet-Bruhat, Y.
