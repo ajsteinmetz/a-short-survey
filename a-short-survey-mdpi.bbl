@@ -130,6 +130,29 @@ Sakharov, A.D.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1070/PU1991v034n05ABEH002504}{\detokenize{10.1070/PU1991v034n05ABEH002504}}}.
 
+\bibitem[Rubakov and Shaposhnikov(1996)]{Rubakov:1996vz}
+Rubakov, V.A.; Shaposhnikov, M.E.
+\newblock {Electroweak baryon number nonconservation in the early universe and
+  in high-energy collisions}.
+\newblock {\em Usp. Fiz. Nauk} {\bf 1996}, {\em 166},~493--537,
+  \href{https://arxiv.org/abs/hep-ph/9603208}{{\normalfont [hep-ph/9603208]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1070/PU1996v039n05ABEH000145}{\detokenize{10.1070/PU1996v039n05ABEH000145}}}.
+
+\bibitem[Affleck and Dine(1985)]{Affleck:1984fy}
+Affleck, I.; Dine, M.
+\newblock {A New Mechanism for Baryogenesis}.
+\newblock {\em Nucl. Phys. B} {\bf 1985}, {\em 249},~361--380.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/0550-3213(85)90021-5}{\detokenize{10.1016/0550-3213(85)90021-5}}}.
+
+\bibitem[Khlopov and Lecian(2023)]{Khlopov:2023dbg}
+Khlopov, M.Y.; Lecian, O.M.
+\newblock {The Formalism of Milky-Way Antimatter-Domains Evolution}.
+\newblock {\em Galaxies} {\bf 2023}, {\em 11},~50.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.3390/galaxies11020050}{\detokenize{10.3390/galaxies11020050}}}.
+
 \bibitem[Letessier and Rafelski(2008)]{Letessier:2005qe}
 Letessier, J.; Rafelski, J.
 \newblock {Hadron production and phase changes in relativistic heavy ion
@@ -325,6 +348,36 @@ Ade, P.A.R.; others.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1051/0004-6361/201525830}{\detokenize{10.1051/0004-6361/201525830}}}.
 
+\bibitem[Caldwell \em{et~al.}(2003)Caldwell, Kamionkowski, and
+  Weinberg]{Caldwell:2003vq}
+Caldwell, R.R.; Kamionkowski, M.; Weinberg, N.N.
+\newblock {Phantom energy and cosmic doomsday}.
+\newblock {\em Phys. Rev. Lett.} {\bf 2003}, {\em 91},~071301,
+  \href{https://arxiv.org/abs/astro-ph/0302506}{{\normalfont
+  [astro-ph/0302506]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/PhysRevLett.91.071301}{\detokenize{10.1103/PhysRevLett.91.071301}}}.
+
+\bibitem[Bilic \em{et~al.}(2002)Bilic, Tupper, and Viollier]{Bilic:2001cg}
+Bilic, N.; Tupper, G.B.; Viollier, R.D.
+\newblock {Unification of dark matter and dark energy: The Inhomogeneous
+  Chaplygin gas}.
+\newblock {\em Phys. Lett. B} {\bf 2002}, {\em 535},~17--21,
+  \href{https://arxiv.org/abs/astro-ph/0111325}{{\normalfont
+  [astro-ph/0111325]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1016/S0370-2693(02)01716-1}{\detokenize{10.1016/S0370-2693(02)01716-1}}}.
+
+\bibitem[Benevento \em{et~al.}(2020)Benevento, Hu, and
+  Raveri]{Benevento:2020fev}
+Benevento, G.; Hu, W.; Raveri, M.
+\newblock {Can Late Dark Energy Transitions Raise the Hubble constant?}
+\newblock {\em Phys. Rev. D} {\bf 2020}, {\em 101},~103517,
+  \href{https://arxiv.org/abs/2002.11707}{{\normalfont
+  [arXiv:astro-ph.CO/2002.11707]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1103/PhysRevD.101.103517}{\detokenize{10.1103/PhysRevD.101.103517}}}.
+
 \bibitem[Perivolaropoulos and Skara(2022)]{Perivolaropoulos:2021jda}
 Perivolaropoulos, L.; Skara, F.
 \newblock {Challenges for \ensuremath{\Lambda}CDM: An update}.
@@ -472,17 +525,19 @@ Yang, C.T.; Rafelski, J.
 \newblock {Possibility of bottom-catalyzed matter genesis near to primordial
   QGP hadronization},  \href{https://arxiv.org/abs/2004.06771}{{\normalfont
   [arXiv:hep-ph/2004.06771]}}.
-
-\bibitem[Yang and Rafelski(2023)]{Yang:2023bot}
-Yang, C.T.; Rafelski, J.
-\newblock {Bottom quark chemical nonequilibrium in primordial QGP}.
-\newblock {\em (in preparation)} {\bf 2023}.
+\newblock Update in preparation, 2023.
 
 \bibitem[Fromerth and Rafelski(2002)]{Fromerth:2002wb}
 Fromerth, M.J.; Rafelski, J.
 \newblock {Hadronization of the quark Universe},
   \href{https://arxiv.org/abs/astro-ph/0211346}{{\normalfont
   [astro-ph/0211346]}}.
+\newblock The physics contents of this original article is seen
+  in~\cite{Fromerth:2012fe}, while~\cite{Rafelski:2019twp} reproduces it in
+  full. To best of JR memory among the reasons this original article remained
+  unpublished is the insistence of a referee that the dark energy must be
+  accounted for during QGP hadronization, the reader can form own judgement
+  looking at \rf{CosmicFraction}.
 
 \bibitem[Roberts(2021)]{Roberts:2021xnz}
 Roberts, C.D.
@@ -1288,13 +1343,6 @@ Springel, V.; others.
   [astro-ph/0504097]}}.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1038/nature03597}{\detokenize{10.1038/nature03597}}}.
-
-\bibitem[Demia\'nski and Doroshkevich(2015)]{Demianski:2015xye}
-Demia\'nski, M.; Doroshkevich, A.G.
-\newblock {Beyond the standard $\Lambda$CDM cosmology: the observed structure
-  of DM halos and the shape of the power spectrum},
-  \href{https://arxiv.org/abs/1511.07989}{{\normalfont
-  [arXiv:astro-ph.CO/1511.07989]}}.
 
 \bibitem[Arbey and Mahmoudi(2021)]{Arbey:2021gdg}
 Arbey, A.; Mahmoudi, F.
