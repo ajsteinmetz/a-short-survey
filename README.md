@@ -7,9 +7,12 @@ We offer a survey of the matter-antimatter evolution within the primordial Unive
 ## authors
 Johann Rafelski, Jeremiah Birrell, Andrew Steinmetz, and Cheng Tao Yang
 
+## citation
+Rafelski, J., Birrell, J., Steinmetz, A. and Yang, C.T. "A short survey of matter-antimatter evolution in the primordial universe." Universe 9.7 (2023): 309.
+
 ## doi/arXiv id
+- https://doi.org/10.3390/universe9070309
 - https://doi.org/10.48550/arXiv.2305.09055
-- https://arxiv.org/abs/2305.09055
 
 ## license
 This work is licensed under a
