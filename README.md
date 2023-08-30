@@ -14,7 +14,7 @@ rel="me noopener noreferrer"
 style="vertical-align: top"><img
 src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
 style="width: 1em; margin-inline-start: 0.5em"
-alt="ORCID iD icon"/>Johann Rafelski</a>, <a
+alt="ORCID iD icon"/> Johann Rafelski</a>, <a
 id="cy-effective-orcid-url"
 class="underline"
 href="https://orcid.org/0000-0002-2289-4856"
@@ -23,7 +23,7 @@ rel="me noopener noreferrer"
 style="vertical-align: top"><img
 src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
 style="width: 1em; margin-inline-start: 0.5em"
-alt="ORCID iD icon"/>Jeremiah Birrell</a>, <a
+alt="ORCID iD icon"/> Jeremiah Birrell</a>, <a
 id="cy-effective-orcid-url"
 class="underline"
 href="https://orcid.org/0000-0001-5474-2649"
@@ -32,7 +32,7 @@ rel="me noopener noreferrer"
 style="vertical-align: top"><img
 src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
 style="width: 1em; margin-inline-start: 0.5em"
-alt="ORCID iD icon"/>Andrew Steinmetz</a>, and <a
+alt="ORCID iD icon"/> Andrew Steinmetz</a>, and <a
 id="cy-effective-orcid-url"
 class="underline"
 href="https://orcid.org/0000-0001-5038-8427"
@@ -41,7 +41,7 @@ rel="me noopener noreferrer"
 style="vertical-align: top"><img
 src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
 style="width: 1em; margin-inline-start: 0.5em"
-alt="ORCID iD icon"/>Cheng Tao Yang</a>
+alt="ORCID iD icon"/> Cheng Tao Yang</a>
 
 ## cite as
 Rafelski, J., Birrell, J., Steinmetz, A. and Yang, C.T. "A short survey of matter-antimatter evolution in the primordial universe." Universe 9.7 (2023): 309.
