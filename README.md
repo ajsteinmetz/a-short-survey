@@ -44,7 +44,7 @@ style="width: 1em; margin-inline-start: 0.5em"
 alt="ORCID iD icon"/> Cheng Tao Yang</a>
 
 ## cite as
-Rafelski, J., Birrell, J., Steinmetz, A. and Yang, C.T. "A short survey of matter-antimatter evolution in the primordial universe." Universe 9.7 (2023): 309.
+Rafelski, J., Birrell, J., Steinmetz, A. & Yang, C.T. A short survey of matter-antimatter evolution in the primordial universe. Universe 9.7 (2023): 309.
 
 ## doi/arXiv id
 - https://doi.org/10.3390/universe9070309
