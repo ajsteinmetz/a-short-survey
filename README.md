@@ -51,6 +51,8 @@ Rafelski, J., Birrell, J., Steinmetz, A. & Yang, C.T. A short survey of matter-a
 - https://doi.org/10.48550/arXiv.2305.09055
 
 ## license
+Copyright © by the authors, 2023.
+
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
 
